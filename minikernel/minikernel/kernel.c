@@ -15,6 +15,29 @@
 
 #include "kernel.h"	/* Contiene defs. usadas por este modulo */
 
+/**
+ * FUNCIONES AUXILIARES PARA DEBUG
+ * 
+ * /
+/*
+	23 / 08 / 2018
+*/
+void imp_cola(lista_BCPs *cola)
+{
+	BCP *p_proc = cola->primero;
+	if (p_proc != NULL)
+	{
+		printk("\nCola de procesos listos\n");
+	}
+
+	while (p_proc != NULL)
+	{
+		printk("\tID: %d; ESTADO: %d\n", p_proc->id, p_proc->estado);
+		p_proc = p_proc->siguiente;
+	}
+}
+
+
 /*
  *
  * Funciones relacionadas con la tabla de procesos:
@@ -112,7 +135,7 @@ static void espera_int()
 {
 	int nivel;
 
-	printk("-> NO HAY LISTOS. ESPERA INT\n");
+	// printk("-> NO HAY LISTOS. ESPERA INT\n");
 
 	/* Baja al m�nimo el nivel de interrupci�n mientras espera */
 	nivel=fijar_nivel_int(NIVEL_1);
@@ -222,12 +245,20 @@ static void int_reloj()
 		19 / 10 / 2018
 	*/
 	BCP *p_proc = cola_bloqueados.primero;
+
+	if (p_proc)
+	{
+		printk("-> PROCESANDO PROCESOS BLOQUEADOS\n");
+	}
+
 	while (p_proc != NULL)
 	{
-		p_proc->ciclos_dormido--;
+		printk("\tID: %d, Ciclos dormido: %d\n!", p_proc->id, p_proc->ciclos_dormido);
 
 		if (p_proc->ciclos_dormido == 0)
 		{
+			printk("\tID: %d se ha despertado\n", p_proc->id);
+
 			BCP *p_proximo = p_proc->siguiente;
 
 			p_proc->estado = LISTO;
@@ -239,10 +270,11 @@ static void int_reloj()
 		}
 		else
 		{
+			p_proc->ciclos_dormido--;
 			p_proc = p_proc->siguiente;
 		}
 	}
-
+	printk("\n");
 	return;
 }
 
@@ -384,19 +416,33 @@ int sis_obtener_id_pr()
 */
 int sis_dormir()
 {
+	imp_cola(&lista_listos);
+
+	int nivel = fijar_nivel_int(NIVEL_3);
+
 	printk("[SIS_DORMIR()]\n");
 	unsigned int segundos = (unsigned int)leer_registro(1);
 	int ciclos = segundos * TICK;
 
-	printk("\tArg: %u\tCiclos: %d\n", segundos, ciclos);
+	printk("\tSegundos: %u\tCiclos: %d\n", segundos, ciclos);
+	printk("\tSe pone a dormir el proceso %d\n", p_proc_actual->id);
 
 	p_proc_actual->estado = BLOQUEADO;
 	p_proc_actual->ciclos_dormido = ciclos;
 	eliminar_elem(&lista_listos, p_proc_actual);
 	insertar_ultimo(&cola_bloqueados, p_proc_actual);
 
+    BCP *proc_a_bloquear  = p_proc_actual;
+
 	p_proc_actual = planificador();
-	cambio_contexto(NULL, &(p_proc_actual->contexto_regs));
+
+	fijar_nivel_int(nivel);
+
+	cambio_contexto(&(proc_a_bloquear->contexto_regs), &(p_proc_actual->contexto_regs));
+	
+	imp_cola(&lista_listos);
+	
+	printk("FIN [SIS_DORMIR()]\n");
 
 	return 0;
 }
