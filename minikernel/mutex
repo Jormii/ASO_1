@@ -1,0 +1,1556 @@
+init: comienza
+-> PROC 0: CREAR PROCESO
+-> PROC 0: CREAR PROCESO
+-> PROC 0: CREAR PROCESO
+-> PROC 0: CREAR PROCESO
+-> PROC 0: CREAR PROCESO
+init: termina
+-> FIN PROCESO 0
+-> C.CONTEXTO POR FIN: de 0 a 1
+_> ID del proceso actual: 1
+yosoy (ID: 1): i 0
+yosoy (ID: 1): i 1
+yosoy (ID: 1): i 2
+yosoy (ID: 1): i 3
+yosoy (ID: 1): i 4
+yosoy (ID: 1): i 5
+yosoy (ID: 1): i 6
+yosoy (ID: 1): i 7
+yosoy (ID: 1): i 8
+yosoy (ID: 1): i 9
+yosoy (ID: 1): termina
+-> FIN PROCESO 1
+-> C.CONTEXTO POR FIN: de 1 a 2
+_> ID del proceso actual: 2
+yosoy (ID: 2): i 0
+yosoy (ID: 2): i 1
+yosoy (ID: 2): i 2
+yosoy (ID: 2): i 3
+yosoy (ID: 2): i 4
+yosoy (ID: 2): i 5
+yosoy (ID: 2): i 6
+yosoy (ID: 2): i 7
+yosoy (ID: 2): i 8
+yosoy (ID: 2): i 9
+yosoy (ID: 2): termina
+-> FIN PROCESO 2
+-> C.CONTEXTO POR FIN: de 2 a 3
+prueba_dormir: comienza
+-> PROC 3: CREAR PROCESO
+-> PROC 3: CREAR PROCESO
+prueba_dormir: termina
+-> FIN PROCESO 3
+-> C.CONTEXTO POR FIN: de 3 a 4
+prueba_mutex1: comienza
+-> PROC 4: CREAR PROCESO
+-> PROC 4: CREAR PROCESO
+-> PROC 4: CREAR PROCESO
+-> PROC 4: CREAR PROCESO
+-> PROC 4: CREAR PROCESO
+prueba_mutex1: termina
+-> FIN PROCESO 4
+-> C.CONTEXTO POR FIN: de 4 a 5
+prueba_mutex comienza
+-> EXCEPCION DE MEMORIA EN PROC 5
+-> C.CONTEXTO POR FIN: de 5 a 0
+_> ID del proceso actual: 0
+dormilon (0): comienza
+dormilon (0) duerme 1 segundo/s
+
+Cola de procesos listos
+	ID: 0; ESTADO: 1
+	ID: 1; ESTADO: 1
+	ID: 2; ESTADO: 1
+	ID: 3; ESTADO: 1
+	ID: 6; ESTADO: 1
+	ID: 7; ESTADO: 1
+	ID: 8; ESTADO: 1
+[SIS_DORMIR()]
+	Segundos: 1	Ciclos: 100
+	Se pone a dormir el proceso 0
+_> ID del proceso actual: 1
+dormilon (1): comienza
+dormilon (1) duerme 1 segundo/s
+
+Cola de procesos listos
+	ID: 1; ESTADO: 1
+	ID: 2; ESTADO: 1
+	ID: 3; ESTADO: 1
+	ID: 6; ESTADO: 1
+	ID: 7; ESTADO: 1
+	ID: 8; ESTADO: 1
+[SIS_DORMIR()]
+	Segundos: 1	Ciclos: 100
+	Se pone a dormir el proceso 1
+creador1 comienza
+-> EXCEPCION DE MEMORIA EN PROC 2
+-> C.CONTEXTO POR FIN: de 2 a 3
+creador2 comienza
+-> EXCEPCION DE MEMORIA EN PROC 3
+-> C.CONTEXTO POR FIN: de 3 a 6
+creador3 comienza
+-> EXCEPCION DE MEMORIA EN PROC 6
+-> C.CONTEXTO POR FIN: de 6 a 7
+creador4 comienza
+-> EXCEPCION DE MEMORIA EN PROC 7
+-> C.CONTEXTO POR FIN: de 7 a 8
+abridor comienza
+-> EXCEPCION DE MEMORIA EN PROC 8
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 100
+!	ID: 1, Ciclos dormido: 100
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 99
+!	ID: 1, Ciclos dormido: 99
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 98
+!	ID: 1, Ciclos dormido: 98
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 97
+!	ID: 1, Ciclos dormido: 97
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 96
+!	ID: 1, Ciclos dormido: 96
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 95
+!	ID: 1, Ciclos dormido: 95
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 94
+!	ID: 1, Ciclos dormido: 94
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 93
+!	ID: 1, Ciclos dormido: 93
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 92
+!	ID: 1, Ciclos dormido: 92
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 91
+!	ID: 1, Ciclos dormido: 91
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 90
+!	ID: 1, Ciclos dormido: 90
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 89
+!	ID: 1, Ciclos dormido: 89
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 88
+!	ID: 1, Ciclos dormido: 88
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 87
+!	ID: 1, Ciclos dormido: 87
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 86
+!	ID: 1, Ciclos dormido: 86
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 85
+!	ID: 1, Ciclos dormido: 85
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 84
+!	ID: 1, Ciclos dormido: 84
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 83
+!	ID: 1, Ciclos dormido: 83
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 82
+!	ID: 1, Ciclos dormido: 82
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 81
+!	ID: 1, Ciclos dormido: 81
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 80
+!	ID: 1, Ciclos dormido: 80
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 79
+!	ID: 1, Ciclos dormido: 79
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 78
+!	ID: 1, Ciclos dormido: 78
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 77
+!	ID: 1, Ciclos dormido: 77
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 76
+!	ID: 1, Ciclos dormido: 76
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 75
+!	ID: 1, Ciclos dormido: 75
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 74
+!	ID: 1, Ciclos dormido: 74
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 73
+!	ID: 1, Ciclos dormido: 73
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 72
+!	ID: 1, Ciclos dormido: 72
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 71
+!	ID: 1, Ciclos dormido: 71
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 70
+!	ID: 1, Ciclos dormido: 70
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 69
+!	ID: 1, Ciclos dormido: 69
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 68
+!	ID: 1, Ciclos dormido: 68
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 67
+!	ID: 1, Ciclos dormido: 67
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 66
+!	ID: 1, Ciclos dormido: 66
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 65
+!	ID: 1, Ciclos dormido: 65
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 64
+!	ID: 1, Ciclos dormido: 64
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 63
+!	ID: 1, Ciclos dormido: 63
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 62
+!	ID: 1, Ciclos dormido: 62
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 61
+!	ID: 1, Ciclos dormido: 61
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 60
+!	ID: 1, Ciclos dormido: 60
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 59
+!	ID: 1, Ciclos dormido: 59
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 58
+!	ID: 1, Ciclos dormido: 58
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 57
+!	ID: 1, Ciclos dormido: 57
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 56
+!	ID: 1, Ciclos dormido: 56
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 55
+!	ID: 1, Ciclos dormido: 55
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 54
+!	ID: 1, Ciclos dormido: 54
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 53
+!	ID: 1, Ciclos dormido: 53
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 52
+!	ID: 1, Ciclos dormido: 52
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 51
+!	ID: 1, Ciclos dormido: 51
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 50
+!	ID: 1, Ciclos dormido: 50
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 49
+!	ID: 1, Ciclos dormido: 49
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 48
+!	ID: 1, Ciclos dormido: 48
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 47
+!	ID: 1, Ciclos dormido: 47
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 46
+!	ID: 1, Ciclos dormido: 46
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 45
+!	ID: 1, Ciclos dormido: 45
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 44
+!	ID: 1, Ciclos dormido: 44
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 43
+!	ID: 1, Ciclos dormido: 43
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 42
+!	ID: 1, Ciclos dormido: 42
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 41
+!	ID: 1, Ciclos dormido: 41
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 40
+!	ID: 1, Ciclos dormido: 40
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 39
+!	ID: 1, Ciclos dormido: 39
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 38
+!	ID: 1, Ciclos dormido: 38
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 37
+!	ID: 1, Ciclos dormido: 37
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 36
+!	ID: 1, Ciclos dormido: 36
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 35
+!	ID: 1, Ciclos dormido: 35
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 34
+!	ID: 1, Ciclos dormido: 34
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 33
+!	ID: 1, Ciclos dormido: 33
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 32
+!	ID: 1, Ciclos dormido: 32
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 31
+!	ID: 1, Ciclos dormido: 31
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 30
+!	ID: 1, Ciclos dormido: 30
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 29
+!	ID: 1, Ciclos dormido: 29
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 28
+!	ID: 1, Ciclos dormido: 28
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 27
+!	ID: 1, Ciclos dormido: 27
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 26
+!	ID: 1, Ciclos dormido: 26
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 25
+!	ID: 1, Ciclos dormido: 25
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 24
+!	ID: 1, Ciclos dormido: 24
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 23
+!	ID: 1, Ciclos dormido: 23
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 22
+!	ID: 1, Ciclos dormido: 22
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 21
+!	ID: 1, Ciclos dormido: 21
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 20
+!	ID: 1, Ciclos dormido: 20
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 19
+!	ID: 1, Ciclos dormido: 19
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 18
+!	ID: 1, Ciclos dormido: 18
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 17
+!	ID: 1, Ciclos dormido: 17
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 16
+!	ID: 1, Ciclos dormido: 16
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 15
+!	ID: 1, Ciclos dormido: 15
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 14
+!	ID: 1, Ciclos dormido: 14
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 13
+!	ID: 1, Ciclos dormido: 13
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 12
+!	ID: 1, Ciclos dormido: 12
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 11
+!	ID: 1, Ciclos dormido: 11
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 10
+!	ID: 1, Ciclos dormido: 10
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 9
+!	ID: 1, Ciclos dormido: 9
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 8
+!	ID: 1, Ciclos dormido: 8
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 7
+!	ID: 1, Ciclos dormido: 7
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 6
+!	ID: 1, Ciclos dormido: 6
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 5
+!	ID: 1, Ciclos dormido: 5
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 4
+!	ID: 1, Ciclos dormido: 4
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 3
+!	ID: 1, Ciclos dormido: 3
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 2
+!	ID: 1, Ciclos dormido: 2
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 1
+!	ID: 1, Ciclos dormido: 1
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 0
+!	ID: 0 se ha despertado
+	ID: 1, Ciclos dormido: 0
+!	ID: 1 se ha despertado
+
+-> C.CONTEXTO POR FIN: de 8 a 0
+
+Cola de procesos listos
+	ID: 0; ESTADO: 1
+	ID: 1; ESTADO: 1
+FIN [SIS_DORMIR()]
+dormilon (0) duerme 1 segundos
+
+Cola de procesos listos
+	ID: 0; ESTADO: 1
+	ID: 1; ESTADO: 1
+[SIS_DORMIR()]
+	Segundos: 1	Ciclos: 100
+	Se pone a dormir el proceso 0
+
+Cola de procesos listos
+	ID: 1; ESTADO: 1
+
+Cola de procesos bloqueados dormir
+	ID: 0; ESTADO: 3
+FIN [SIS_DORMIR()]
+dormilon (1) duerme 2 segundos
+
+Cola de procesos listos
+	ID: 1; ESTADO: 1
+[SIS_DORMIR()]
+	Segundos: 2	Ciclos: 200
+	Se pone a dormir el proceso 1
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 100
+!	ID: 1, Ciclos dormido: 200
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 99
+!	ID: 1, Ciclos dormido: 199
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 98
+!	ID: 1, Ciclos dormido: 198
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 97
+!	ID: 1, Ciclos dormido: 197
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 96
+!	ID: 1, Ciclos dormido: 196
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 95
+!	ID: 1, Ciclos dormido: 195
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 94
+!	ID: 1, Ciclos dormido: 194
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 93
+!	ID: 1, Ciclos dormido: 193
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 92
+!	ID: 1, Ciclos dormido: 192
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 91
+!	ID: 1, Ciclos dormido: 191
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 90
+!	ID: 1, Ciclos dormido: 190
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 89
+!	ID: 1, Ciclos dormido: 189
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 88
+!	ID: 1, Ciclos dormido: 188
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 87
+!	ID: 1, Ciclos dormido: 187
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 86
+!	ID: 1, Ciclos dormido: 186
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 85
+!	ID: 1, Ciclos dormido: 185
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 84
+!	ID: 1, Ciclos dormido: 184
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 83
+!	ID: 1, Ciclos dormido: 183
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 82
+!	ID: 1, Ciclos dormido: 182
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 81
+!	ID: 1, Ciclos dormido: 181
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 80
+!	ID: 1, Ciclos dormido: 180
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 79
+!	ID: 1, Ciclos dormido: 179
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 78
+!	ID: 1, Ciclos dormido: 178
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 77
+!	ID: 1, Ciclos dormido: 177
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 76
+!	ID: 1, Ciclos dormido: 176
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 75
+!	ID: 1, Ciclos dormido: 175
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 74
+!	ID: 1, Ciclos dormido: 174
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 73
+!	ID: 1, Ciclos dormido: 173
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 72
+!	ID: 1, Ciclos dormido: 172
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 71
+!	ID: 1, Ciclos dormido: 171
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 70
+!	ID: 1, Ciclos dormido: 170
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 69
+!	ID: 1, Ciclos dormido: 169
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 68
+!	ID: 1, Ciclos dormido: 168
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 67
+!	ID: 1, Ciclos dormido: 167
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 66
+!	ID: 1, Ciclos dormido: 166
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 65
+!	ID: 1, Ciclos dormido: 165
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 64
+!	ID: 1, Ciclos dormido: 164
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 63
+!	ID: 1, Ciclos dormido: 163
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 62
+!	ID: 1, Ciclos dormido: 162
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 61
+!	ID: 1, Ciclos dormido: 161
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 60
+!	ID: 1, Ciclos dormido: 160
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 59
+!	ID: 1, Ciclos dormido: 159
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 58
+!	ID: 1, Ciclos dormido: 158
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 57
+!	ID: 1, Ciclos dormido: 157
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 56
+!	ID: 1, Ciclos dormido: 156
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 55
+!	ID: 1, Ciclos dormido: 155
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 54
+!	ID: 1, Ciclos dormido: 154
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 53
+!	ID: 1, Ciclos dormido: 153
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 52
+!	ID: 1, Ciclos dormido: 152
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 51
+!	ID: 1, Ciclos dormido: 151
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 50
+!	ID: 1, Ciclos dormido: 150
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 49
+!	ID: 1, Ciclos dormido: 149
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 48
+!	ID: 1, Ciclos dormido: 148
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 47
+!	ID: 1, Ciclos dormido: 147
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 46
+!	ID: 1, Ciclos dormido: 146
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 45
+!	ID: 1, Ciclos dormido: 145
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 44
+!	ID: 1, Ciclos dormido: 144
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 43
+!	ID: 1, Ciclos dormido: 143
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 42
+!	ID: 1, Ciclos dormido: 142
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 41
+!	ID: 1, Ciclos dormido: 141
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 40
+!	ID: 1, Ciclos dormido: 140
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 39
+!	ID: 1, Ciclos dormido: 139
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 38
+!	ID: 1, Ciclos dormido: 138
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 37
+!	ID: 1, Ciclos dormido: 137
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 36
+!	ID: 1, Ciclos dormido: 136
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 35
+!	ID: 1, Ciclos dormido: 135
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 34
+!	ID: 1, Ciclos dormido: 134
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 33
+!	ID: 1, Ciclos dormido: 133
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 32
+!	ID: 1, Ciclos dormido: 132
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 31
+!	ID: 1, Ciclos dormido: 131
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 30
+!	ID: 1, Ciclos dormido: 130
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 29
+!	ID: 1, Ciclos dormido: 129
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 28
+!	ID: 1, Ciclos dormido: 128
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 27
+!	ID: 1, Ciclos dormido: 127
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 26
+!	ID: 1, Ciclos dormido: 126
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 25
+!	ID: 1, Ciclos dormido: 125
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 24
+!	ID: 1, Ciclos dormido: 124
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 23
+!	ID: 1, Ciclos dormido: 123
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 22
+!	ID: 1, Ciclos dormido: 122
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 21
+!	ID: 1, Ciclos dormido: 121
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 20
+!	ID: 1, Ciclos dormido: 120
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 19
+!	ID: 1, Ciclos dormido: 119
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 18
+!	ID: 1, Ciclos dormido: 118
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 17
+!	ID: 1, Ciclos dormido: 117
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 16
+!	ID: 1, Ciclos dormido: 116
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 15
+!	ID: 1, Ciclos dormido: 115
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 14
+!	ID: 1, Ciclos dormido: 114
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 13
+!	ID: 1, Ciclos dormido: 113
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 12
+!	ID: 1, Ciclos dormido: 112
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 11
+!	ID: 1, Ciclos dormido: 111
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 10
+!	ID: 1, Ciclos dormido: 110
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 9
+!	ID: 1, Ciclos dormido: 109
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 8
+!	ID: 1, Ciclos dormido: 108
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 7
+!	ID: 1, Ciclos dormido: 107
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 6
+!	ID: 1, Ciclos dormido: 106
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 5
+!	ID: 1, Ciclos dormido: 105
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 4
+!	ID: 1, Ciclos dormido: 104
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 3
+!	ID: 1, Ciclos dormido: 103
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 2
+!	ID: 1, Ciclos dormido: 102
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 1
+!	ID: 1, Ciclos dormido: 101
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 0
+!	ID: 0 se ha despertado
+	ID: 1, Ciclos dormido: 100
+!
+
+Cola de procesos listos
+	ID: 0; ESTADO: 1
+
+Cola de procesos bloqueados dormir
+	ID: 1; ESTADO: 3
+FIN [SIS_DORMIR()]
+dormilon (0): termina
+-> FIN PROCESO 0
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 99
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 98
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 97
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 96
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 95
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 94
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 93
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 92
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 91
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 90
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 89
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 88
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 87
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 86
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 85
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 84
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 83
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 82
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 81
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 80
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 79
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 78
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 77
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 76
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 75
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 74
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 73
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 72
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 71
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 70
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 69
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 68
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 67
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 66
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 65
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 64
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 63
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 62
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 61
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 60
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 59
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 58
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 57
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 56
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 55
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 54
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 53
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 52
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 51
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 50
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 49
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 48
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 47
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 46
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 45
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 44
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 43
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 42
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 41
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 40
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 39
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 38
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 37
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 36
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 35
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 34
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 33
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 32
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 31
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 30
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 29
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 28
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 27
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 26
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 25
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 24
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 23
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 22
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 21
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 20
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 19
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 18
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 17
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 16
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 15
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 14
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 13
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 12
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 11
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 10
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 9
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 8
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 7
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 6
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 5
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 4
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 3
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 2
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 1
+!
+-> TRATANDO INT. DE RELOJ
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 1, Ciclos dormido: 0
+!	ID: 1 se ha despertado
+
+-> C.CONTEXTO POR FIN: de 0 a 1
+
+Cola de procesos listos
+	ID: 1; ESTADO: 1
+FIN [SIS_DORMIR()]
+dormilon (1): termina
+-> FIN PROCESO 1
