@@ -22,6 +22,43 @@
 #include "HAL.h"
 #include "llamsis.h"
 
+/**
+ * DECLARACION DE LOS MUTEX
+ * 23 / 10 / 2018
+ */
+
+// Structs
+typedef struct mutex {
+    char nombre[MAX_NOM_MUT];
+    int estado;
+	int abierto;
+	int tipo;
+	int num_bloqueos;
+	int num_procesos_bloqueados;
+	int id_proc_bloq;	// ID del proceso que realizo lock sobre el mutex
+} mutex;
+
+/**
+ * Constantes
+ */
+#define RECURSIVO 0
+#define NO_RECURSIVO 1
+
+#define MUTEX_LIBRE 0
+#define MUTEX_BLOQUEADO 1
+
+#define MUTEX_CERRADO 0
+#define MUTEX_ABIERTO 1
+mutex tabla_mutex[NUM_MUT];
+
+/**
+ * Declaracion de funciones auxiliares para los mutex
+ */
+static void iniciar_tabla_mutex();
+static int buscar_descriptor_libre();
+static int buscar_nombre_mutex(char *nombre_mutex);
+static int buscar_mutex_libre();
+
 /*
  *
  * Definicion del tipo que corresponde con el BCP.
@@ -40,6 +77,8 @@ typedef struct BCP_t
 	void *info_mem;				/* descriptor del mapa de memoria */
 
 	int ciclos_dormido;			// 19 / 10 / 2018
+	mutex *descriptores_mutex[NUM_MUT_PROC];		// 23 / 08 / 2018
+	int ciclos_en_ejecucion;
 } BCP;
 
 /*
@@ -76,7 +115,13 @@ lista_BCPs lista_listos = { NULL, NULL };
 /*
 	19 / 10 / 2018
 */
-lista_BCPs cola_bloqueados = { NULL, NULL };
+lista_BCPs cola_bloqueados_dormir = { NULL, NULL };
+
+/*
+	23 / 10 / 2018
+*/
+lista_BCPs cola_bloqueados_mutex_libre = { NULL, NULL };
+lista_BCPs cola_bloqueados_mutex_lock = { NULL, NULL };
 
 /*
  *
@@ -98,6 +143,14 @@ int sis_terminar_proceso();
 int sis_escribir();
 int sis_obtener_id_pr();		// 16 / 10 / 2018
 int sis_dormir();				// 19 / 10 / 2018
+/**
+ * 23 / 10 / 2018
+ */
+int sis_crear_mutex();
+int sis_abrir_mutex();
+int sis_lock_mutex();
+int sis_unlock_mutex();
+int sis_cerrar_mutex();
 
 /*
  * Variable global que contiene las rutinas que realizan cada llamada
@@ -106,8 +159,12 @@ servicio tabla_servicios[NSERVICIOS] =	{	{sis_crear_proceso},
 											{sis_terminar_proceso},
 											{sis_escribir},
 											{sis_obtener_id_pr},
-											{sis_dormir}
+											{sis_dormir},
+											{sis_crear_mutex},
+											{sis_abrir_mutex},
+											{sis_lock_mutex},
+											{sis_unlock_mutex},
+											{sis_cerrar_mutex}
 										};
 
 #endif /* _KERNEL_H */
-

@@ -14,6 +14,43 @@
  */
 
 #include "kernel.h"	/* Contiene defs. usadas por este modulo */
+#include <string.h>
+
+/**
+ * Declaración de funciones que no pertenecen a "kernel.h"
+ */
+void imp_cola(lista_BCPs *cola, const char *nombre);
+static void iniciar_tabla_proc();
+static int buscar_BCP_libre();
+static void insertar_ultimo(lista_BCPs *lista, BCP * proc);
+static void eliminar_primero(lista_BCPs *lista);
+static void espera_int();
+static BCP * planificador();
+static void liberar_proceso();
+static void int_sw();
+// INCLUIR EL RESTO
+
+/**
+ * FUNCIONES AUXILIARES PARA DEBUG
+ * 
+ */
+
+// 23 / 08 / 2018
+void imp_cola(lista_BCPs *cola, const char *nombre)
+{
+	BCP *p_proc = cola->primero;
+	if (p_proc != NULL)
+	{
+		printk("\nCola de procesos %s\n", nombre);
+	}
+
+	while (p_proc != NULL)
+	{
+		printk("\tID: %d; ESTADO: %d\n", p_proc->id, p_proc->estado);
+		p_proc = p_proc->siguiente;
+	}
+}
+
 
 /*
  *
@@ -112,7 +149,7 @@ static void espera_int()
 {
 	int nivel;
 
-	printk("-> NO HAY LISTOS. ESPERA INT\n");
+	// printk("-> NO HAY LISTOS. ESPERA INT\n");
 
 	/* Baja al m�nimo el nivel de interrupci�n mientras espera */
 	nivel=fijar_nivel_int(NIVEL_1);
@@ -127,6 +164,7 @@ static BCP * planificador()
 {
 	while (lista_listos.primero==NULL)
 		espera_int();		/* No hay nada que hacer */
+
 	return lista_listos.primero;
 }
 
@@ -218,31 +256,54 @@ static void int_reloj()
 {
 	printk("-> TRATANDO INT. DE RELOJ\n");
 
+	/**
+	 * 25 / 10 / 2018
+	 */
+	int id = p_proc_actual->id;
+	int ciclos = p_proc_actual->ciclos_en_ejecucion;
+	printk("\tAl proceso %d le restan %d ciclos en ejecución\n", id, ciclos);
+	if (p_proc_actual->ciclos_en_ejecucion == 0)
+	{
+		int_sw();
+		return;
+	}
+	p_proc_actual->ciclos_en_ejecucion--;
+	/**/
+
 	/*
 		19 / 10 / 2018
 	*/
-	BCP *p_proc = cola_bloqueados.primero;
+	BCP *p_proc = cola_bloqueados_dormir.primero;
+
+	if (p_proc)
+	{
+		printk("-> PROCESANDO PROCESOS BLOQUEADOS\n");
+	}
+
 	while (p_proc != NULL)
 	{
-		p_proc->ciclos_dormido--;
+		printk("\tID: %d, Ciclos dormido: %d\n!", p_proc->id, p_proc->ciclos_dormido);
 
 		if (p_proc->ciclos_dormido == 0)
 		{
+			printk("\tID: %d se ha despertado\n", p_proc->id);
+
 			BCP *p_proximo = p_proc->siguiente;
 
 			p_proc->estado = LISTO;
 			p_proc->ciclos_dormido = -1;
-			eliminar_elem(&cola_bloqueados, p_proc);
+			eliminar_elem(&cola_bloqueados_dormir, p_proc);
 			insertar_ultimo(&lista_listos, p_proc);
 
 			p_proc = p_proximo;
 		}
 		else
 		{
+			p_proc->ciclos_dormido--;
 			p_proc = p_proc->siguiente;
 		}
 	}
-
+	printk("\n");
 	return;
 }
 
@@ -268,6 +329,28 @@ static void tratar_llamsis()
 static void int_sw()
 {
 	printk("-> TRATANDO INT. SW\n");
+
+	/**
+	 * 25 / 10 / 2018
+	 */
+	
+	BCP *proceso_a_expulsar = p_proc_actual;
+	proceso_a_expulsar->ciclos_en_ejecucion = TICKS_POR_RODAJA;
+	printk("\tSe va a expulsar el proceso %d\n", proceso_a_expulsar->id);
+
+	int nivel = fijar_nivel_int(NIVEL_3);
+
+	eliminar_elem(&lista_listos, proceso_a_expulsar);
+
+	p_proc_actual = planificador();
+	p_proc_actual->ciclos_en_ejecucion = TICKS_POR_RODAJA;
+
+	insertar_ultimo(&lista_listos, proceso_a_expulsar);
+
+	printk("\tEntra a ejecutarse el proceso %d\n", p_proc_actual->id);
+
+	fijar_nivel_int(nivel);
+	cambio_contexto(&(proceso_a_expulsar->contexto_regs), &(p_proc_actual->contexto_regs));
 
 	return;
 }
@@ -305,6 +388,7 @@ static int crear_tarea(char *prog)
 		p_proc->estado=LISTO;
 
 		p_proc->ciclos_dormido = -1;	// 19 / 10 / 2018
+		p_proc->ciclos_en_ejecucion = TICKS_POR_RODAJA;
 
 		/* lo inserta al final de cola de listos */
 		insertar_ultimo(&lista_listos, p_proc);
@@ -384,21 +468,303 @@ int sis_obtener_id_pr()
 */
 int sis_dormir()
 {
+	imp_cola(&lista_listos, "listos");
+
+	int nivel = fijar_nivel_int(NIVEL_3);
+
 	printk("[SIS_DORMIR()]\n");
 	unsigned int segundos = (unsigned int)leer_registro(1);
 	int ciclos = segundos * TICK;
 
-	printk("\tArg: %u\tCiclos: %d\n", segundos, ciclos);
+	printk("\tSegundos: %u\tCiclos: %d\n", segundos, ciclos);
+	printk("\tSe pone a dormir el proceso %d\n", p_proc_actual->id);
 
 	p_proc_actual->estado = BLOQUEADO;
 	p_proc_actual->ciclos_dormido = ciclos;
 	eliminar_elem(&lista_listos, p_proc_actual);
-	insertar_ultimo(&cola_bloqueados, p_proc_actual);
+	insertar_ultimo(&cola_bloqueados_dormir, p_proc_actual);
+
+    BCP *proc_a_bloquear  = p_proc_actual;
 
 	p_proc_actual = planificador();
-	cambio_contexto(NULL, &(p_proc_actual->contexto_regs));
+
+	fijar_nivel_int(nivel);
+
+	cambio_contexto(&(proc_a_bloquear->contexto_regs), &(p_proc_actual->contexto_regs));
+	
+	imp_cola(&lista_listos, "listos");
+	imp_cola(&cola_bloqueados_dormir, "bloqueados dormir");
+	
+	printk("FIN [SIS_DORMIR()]\n");
 
 	return 0;
+}
+
+/**
+ * 23 / 10 / 2018
+ */
+int sis_crear_mutex()
+{
+	printk("[SIS_CREAR_MUTEX()\n");
+
+	char *nombre = (char *)leer_registro(1);
+	int tipo = (int)leer_registro(2);
+
+	printk("\tArg1 (Nombre): %s, Arg2 (Tipo): %d\n", nombre, tipo);
+
+	int lon = strlen(nombre);
+	if (lon >= MAX_NOM_MUT)
+	{
+		printk("\tError creando el mutex: la longitud del nombre argumento(%d) es superior a %d", lon, MAX_NOM_MUT);
+		return -1;
+	}
+
+	if (buscar_nombre_mutex(nombre) >= 0)
+	{
+		printk("\tError creando el mutex: ya existe un mutex con ese nombre\n");
+		return -2;
+	}
+
+	int descriptor = buscar_descriptor_libre();
+	if (descriptor < 0)
+	{
+		printk("\tError creando el mutex: no hay descriptores disponibles\n");
+		return -3;
+	}
+
+	int pos_libre = buscar_mutex_libre();
+	if (pos_libre < 0)
+	{
+		BCP *proceso_a_bloquear = p_proc_actual;
+		
+		proceso_a_bloquear->estado = BLOQUEADO;
+
+		int nivel = fijar_nivel_int(NIVEL_3);
+
+		eliminar_elem(&lista_listos, proceso_a_bloquear);
+		insertar_ultimo(&cola_bloqueados_mutex_libre, proceso_a_bloquear);
+
+		BCP *proceso_proximo = planificador();
+
+		fijar_nivel_int(nivel);
+		cambio_contexto(&(proceso_a_bloquear->contexto_regs), &(proceso_proximo->contexto_regs));
+	}
+	else
+	{
+		mutex nuevo_mutex = tabla_mutex[pos_libre];
+
+		strcpy(nuevo_mutex.nombre, nombre);
+		nuevo_mutex.estado = MUTEX_BLOQUEADO;
+		nuevo_mutex.abierto = MUTEX_CERRADO;
+		nuevo_mutex.tipo = tipo;
+		nuevo_mutex.num_bloqueos = 0;
+		nuevo_mutex.num_procesos_bloqueados = 0;
+	}
+	return descriptor;
+}
+
+int sis_abrir_mutex()
+{
+	/**
+	 * 24 / 10 / 2018
+	 */
+	printk("[SIS_ABRIR_MUTEX()]\n");
+
+	char *nombre = (char*)leer_registro(1);
+	printk("\tArg1 (Nombre): %s\n", nombre);
+
+	int descriptor = buscar_nombre_mutex(nombre);
+	if (descriptor < 0)
+	{
+		printk("\tError abriendo el mutex: no existe ningún mutex llamado %s\n", nombre);
+		return -1;
+	}
+
+	mutex mutex_a_abrir = tabla_mutex[descriptor];
+
+	if (mutex_a_abrir.abierto == MUTEX_ABIERTO)
+	{
+		printk("\tError abriendo el mutex: el mutex %s(ID %d) ya está abierto\n", nombre, descriptor);
+		return -2;
+	}
+
+	printk("\tSe ha abierto el mutex %s(ID %d)\n", nombre, descriptor);
+	tabla_mutex[descriptor].abierto = MUTEX_ABIERTO;
+	return descriptor;
+}
+
+int sis_lock_mutex()
+{
+	printk("[SIS_LOCK_MUTEX()]\n");
+
+	unsigned int mutex_id = (unsigned int)leer_registro(1);
+
+	printk("\tArg1 (Mutex ID): %u\n", mutex_id);
+
+	mutex *mutex_lock = p_proc_actual->descriptores_mutex[mutex_id];
+
+	if (mutex_lock == NULL)
+	{
+		int id = p_proc_actual->id;
+		printk("\tError en lock: el mutex del proceso %d con descriptor %u no existe\n", id, mutex_id);
+		return -1;
+	}
+
+	int tipo = mutex_lock->tipo;
+	int estado = mutex_lock->estado;
+	char *nombre = mutex_lock->nombre;
+
+	if (tipo == NO_RECURSIVO && estado == MUTEX_BLOQUEADO)
+	{
+		printk("\tError en lock: el mutex no recursivo %s ya estaba bloqueado\n", nombre);
+		printk("\tSe procede a bloquear el proceso %d\n", p_proc_actual->id);
+
+		BCP *proceso_a_bloquear = p_proc_actual;
+		
+		proceso_a_bloquear->estado = BLOQUEADO;
+
+		int nivel = fijar_nivel_int(NIVEL_3);
+
+		eliminar_elem(&lista_listos, proceso_a_bloquear);
+		insertar_ultimo(&cola_bloqueados_mutex_libre, proceso_a_bloquear);
+
+		BCP *proceso_proximo = planificador();
+
+		fijar_nivel_int(nivel);
+		cambio_contexto(&(proceso_a_bloquear->contexto_regs), &(proceso_proximo->contexto_regs));
+		return -2;
+	}
+
+	mutex_lock->estado = MUTEX_BLOQUEADO;
+	mutex_lock->id_proc_bloq = p_proc_actual->id;
+	printk("\tSe ha bloquedo el mutex %s\n", nombre);
+	return 0;
+}
+
+int sis_unlock_mutex()
+{
+	printk("[SIS_UNLOCK_MUTEX()]\n");
+
+	unsigned int mutex_id = (unsigned int)leer_registro(1);
+
+	printk("\tArg1 (Mutex ID): %u\n", mutex_id);
+
+	mutex *mutex_unlock = p_proc_actual->descriptores_mutex[mutex_id];
+
+	if (mutex_unlock == NULL)
+	{
+		printk("\tError en unlock: el mutex con ID %u no existe\n", mutex_id);
+		return -1;
+	}
+
+	if (mutex_unlock->abierto == MUTEX_CERRADO)
+	{
+		printk("\tError en unlock: el mutex %s no está abierto\n", mutex_unlock->nombre);
+		return -2;
+	}
+
+	if (mutex_unlock->id_proc_bloq != p_proc_actual->id)
+	{
+		int id_proc = p_proc_actual->id;
+		int id_mutex = mutex_unlock->id_proc_bloq;
+		printk("\tError en unlock: el proceso %d no fue el último en realizar lock sobre el mutex, sino %d\n", id_proc, id_mutex);
+		return -3;
+	}
+
+	mutex_unlock->estado = MUTEX_LIBRE;
+	char *nombre = mutex_unlock->nombre;
+
+	// HORRIPILANTE
+	BCP *p_proc_bloq_mut = cola_bloqueados_mutex_lock.primero;
+	while (p_proc_bloq_mut != NULL)
+	{
+		mutex *desc_mutex_bloq = p_proc_bloq_mut->descriptores_mutex;
+		for (int i = 0; i != NUM_MUT_PROC; ++i)
+		{
+			mutex *mutex_proc_bloq = &desc_mutex_bloq[i];
+			if (mutex_proc_bloq != NULL)
+			{
+				char *nombre_mutex_bloq = mutex_proc_bloq->nombre;
+				if (strcmp(nombre_mutex_bloq, nombre))
+				{
+					// Desbloquear proceso
+					BCP *proceso_a_desbloquear = p_proc_bloq_mut;
+		
+					proceso_a_desbloquear->estado = LISTO;
+					mutex_unlock->id_proc_bloq = proceso_a_desbloquear->id;
+					int nivel = fijar_nivel_int(NIVEL_3);
+
+					eliminar_elem(&cola_bloqueados_mutex_lock, proceso_a_desbloquear);
+					insertar_ultimo(&lista_listos, proceso_a_desbloquear);
+
+					fijar_nivel_int(nivel);
+					break;
+				}
+			}
+			printk("\tEl break saltó aquí 1\n");
+		}
+		printk("\tEl break saltó aquí 2\n");
+	}
+	return 0;
+}
+
+int sis_cerrar_mutex()
+{
+	printk("[SIS_CERRAR_MUTES()]\n");
+
+	unsigned int mutex_id = (unsigned int)leer_registro(1);
+
+	printk("\tArg1 (Mutex ID): %u", mutex_id);
+
+	mutex *mutex_cerrar = p_proc_actual->descriptores_mutex[mutex_id];
+
+	if (mutex_cerrar == NULL)
+	{
+		printk("\tError cerrando el mutex: no existe el mutex con ID %u\n", mutex_id);
+		return -1;
+	}
+
+	return 0;
+}
+
+/**
+ * Implementacion funciones auxiliares mutex
+ */
+static void iniciar_tabla_mutex(){
+	int i;
+	for(i = 0; i < NUM_MUT; i++){
+		tabla_mutex[i].id_proc_bloq = -1;
+		tabla_mutex[i].estado = 0; /* indica que el mutex esta libre */
+	}
+}
+
+static int buscar_descriptor_libre(){
+	int i;
+	for(i = 0; i < NUM_MUT_PROC; i++){
+		if(p_proc_actual->descriptores_mutex[i] == NULL)
+		{
+			return i; /* devuelve el n˙mero del descriptor */
+		}
+	}
+	return -1; /* no hay descriptor libre */
+}
+
+static int buscar_nombre_mutex(char *nombre_mutex){
+	int i;
+	for(i = 0; i < NUM_MUT; i++){
+		if(strcmp(tabla_mutex[i].nombre, nombre_mutex) == 0)
+			return i;	/* el nombre existe y devuelve su posicion en la tabla de mutex */
+	}
+	return -1; /* el nombre no existe */
+}
+
+static int buscar_mutex_libre(){
+	int i;
+	for(i = 0; i < NUM_MUT; i++){
+		if(tabla_mutex[i].estado == 0)
+			return i;	/* el mutex esta libre y devuelve su posicion en la tabla de mutex */
+	}
+	return -1; /* no hay mutex libre */
 }
 
 /*
@@ -422,6 +788,7 @@ int main()
 	iniciar_cont_teclado();		/* inici cont. teclado */
 
 	iniciar_tabla_proc();		/* inicia BCPs de tabla de procesos */
+	iniciar_tabla_mutex();		// 23 / 10 / 2018
 
 	/* crea proceso inicial */
 	if (crear_tarea((void *)"init") < 0)

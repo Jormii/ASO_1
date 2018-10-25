@@ -40,5 +40,16 @@ int obtener_id_pr();
 */
 int dormir(unsigned int s);
 
+/**
+ * 23 / 10 / 2018
+ */
+#define RECURSIVO 0
+#define NO_RECURSIVO 1
+int crear_mutex(char *nombre, int tipo);
+int abrir_mutex(char *nombre);
+int lock(unsigned int mutex_id);
+int unlock(unsigned int mutex_id);
+int cerrar_mutex(unsigned int mutex_id);
+
 #endif /* SERVICIOS_H */
 
