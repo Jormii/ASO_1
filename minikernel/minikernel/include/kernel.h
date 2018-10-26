@@ -1,18 +1,8 @@
-/*
- *  minikernel/include/kernel.h
- *
- *  Minikernel. Versi�n 1.0
- *
- *  Fernando P�rez Costoya
- *
- */
-
-/*
- *
- * Fichero de cabecera que contiene definiciones usadas por kernel.c
- *
- *      SE DEBE MODIFICAR PARA INCLUIR NUEVA FUNCIONALIDAD
- *
+/**
+ * minikernel/include/kernel.h
+ * Minikernel version 1.0
+ * 
+ * Fernando Perez Costoya
  */
 
 #ifndef _KERNEL_H
@@ -22,92 +12,128 @@
 #include "HAL.h"
 #include "llamsis.h"
 
-/*
- *
- * Definicion del tipo que corresponde con el BCP.
- * Se va a modificar al incluir la funcionalidad pedida.
- *
+/**
+ * Constantes
  */
-typedef struct BCP_t *BCPptr;
+#define MUTEX_TIPO_RECURSIVO 0
+#define MUTEX_TIPO_NO_RECURSIVO 1
+#define MUTEX_ESTADO_LIBRE 0
+#define MUTEX_ESTADO_BLOQUEADO 1
+#define MUTEX_CERRADO 0
+#define MUTEX_ABIERTO 1
 
+/**
+ * Declaracion de tipos
+ */
+typedef struct BCP_t BCP;
+typedef struct mutex_t mutex;
+typedef struct servicio_t servicio;
+typedef struct lista_t lista_BCPs;
+
+/**
+ * Declaracion de funciones
+ */
+// Operaciones sobre procesos, tabla de procesos y BCPs
+static void iniciar_tabla_proc();	// Inicia la tabla de procesos
+static int buscar_BCP_libre();		// Busca una entrada libre en la tabla de procesos
+static int crear_tarea(char *programa);		// Crea un proceso reservando sus recursos. Usada por la llamada al sistema "crear_proceso"
+
+// Operaciones sobre las listas. Primero eliminar un proceso. Despues eliminarlo
+static void insertar_ultimo(lista_BCPs *lista, BCP *proceso);	// Insertar un BCP al final de la lista
+static void eliminar_primero(lista_BCPs *lista);				// Elimina el primer BCP de la lista
+static void eliminar_elem(lista_BCPs *lista, BCP *proceso);		// Elimina el BCP "proceso" de la lista
+
+// Manejadores de excepciones
+static void exc_arit();		// Tratamiento de excepciones de acceso a memoria
+static void exc_mem();		// Tratamiento de excepciones aritmeticas
+
+// Vinculadas a las RTI y planificacion
+static BCP* planificador();		// Funcion de planificacion mediante un algoritmo FIFO
+static void liberar_proceso();  // Funcion auxiliar que termina proceso actual liberando sus recursos.
+ 									// Usada por la llamada "terminar_proceso" y por rutinas que tratan excepciones
+static void espera_int();		// Espera a que se produzca una interrupcion
+static void int_reloj();		// Tratamiento de interrupciones de reloj
+static void int_sw();			// Tratamiento de interrupciones software
+static void int_terminal();		// Tratamiento de interrupciones de terminal
+
+// Vinculadas a los mutex
+static void iniciar_tabla_mutex();
+static int buscar_descriptor_libre();
+static int buscar_nombre_mutex(char *nombre_mutex);
+static int buscar_mutex_libre();
+
+// Llamadas al sistema
+static void tratar_llamsis();	// Tratamiento de llamadas al sistema
+int sis_crear_proceso();		// Tratamiento de llamada al sistema "crear_proceso". Llama a "crear_tarea"
+int sis_terminar_proceso();		// Tratamiento de llamada al sistema "terminar_proceso". Llama al "liberar_proceso"
+int sis_escribir();				// Tratamiento de llamada al sistema "escribir". Llama a "escribir_ker"
+int sis_obtener_id_pr();		// Tratamiento de llamada al sistema "obtener_id_pr"
+int sis_dormir();				// Tratamiento de llamada al sistema "dormir"
+int sis_crear_mutex();
+int sis_abrir_mutex();
+int sis_lock_mutex();
+int sis_unlock_mutex();
+int sis_cerrar_mutex();
+
+/**
+ * Definicion de los structs
+ */
 typedef struct BCP_t
 {
-	int id;						/* ident. del proceso */
-	int estado;					/* TERMINADO|LISTO|EJECUCION|BLOQUEADO*/
-	contexto_t contexto_regs;	/* copia de regs. de UCP */
-	void * pila;				/* dir. inicial de la pila */
-	BCPptr siguiente;			/* puntero a otro BCP */
-	void *info_mem;				/* descriptor del mapa de memoria */
-
-	int ciclos_dormido;			// 19 / 10 / 2018
+	int id;						// Identificador del proceso
+	int estado;					// TERMINADO | LISTO | EJECUCION | BLOQUEADO*/
+	contexto_t contexto_regs;	// Copia de los registros de la CPU
+	void * pila;				// Puntero al comienzo de la pila
+	BCP *siguiente;				// Puntero al proximo proceso en la lista contenedora
+	void *info_mem;				// Descritor del mapa de memoria
+	int ciclos_dormido;			// Numero de ciclos que restan para que el proceso despierte. Influenciado por la llamada al sistema dormir()
+	mutex *descriptores_mutex[NUM_MUT_PROC];	// Mutex poseidos por este proceso
+	int ciclos_en_ejecucion;					// Numero de ciclos que restan para que el round robin expulse a este proceso de ejecucion
 } BCP;
 
-/*
- *
- * Definicion del tipo que corresponde con la cabecera de una lista
- * de BCPs. Este tipo se puede usar para diversas listas (procesos listos,
- * procesos bloqueados en sem�foro, etc.).
- *
- */
-
-typedef struct
+typedef struct mutex_t
 {
-	BCP *primero;
-	BCP *ultimo;
-} lista_BCPs;
+    char nombre[MAX_NOM_MUT];	// Nombre identificador y univoco del mutex
+    int estado;					// Estado actual del mutex: LIBRE | BLOQUEADO
+	int abierto;				// Indica si el mutex ha sido abierto
+	int tipo;					// Indica el tipo del mutex: RECURSIVO | NO_RECURSIVO
+	int num_bloqueos;			// ???
+	int num_procesos_bloqueados;	// Numero de procesos bloqueados por el mutex en un instante de tiempo
+	int id_proc_bloq;			// ID del proceso que realizo lock sobre el mutex
+} mutex;
 
-
-/*
- * Variable global que identifica el proceso actual
- */
-
-BCP *p_proc_actual = NULL;
-
-/*
- * Variable global que representa la tabla de procesos
- */
-BCP tabla_procs[MAX_PROC];
-
-/*
- * Variable global que representa la cola de procesos listos
- */
-lista_BCPs lista_listos = { NULL, NULL };
-
-/*
-	19 / 10 / 2018
-*/
-lista_BCPs cola_bloqueados = { NULL, NULL };
-
-/*
- *
- * Definici�n del tipo que corresponde con una entrada en la tabla de
- * llamadas al sistema.
- *
- */
-typedef struct
+typedef struct servicio_t
 {
 	int (*fservicio)();
 } servicio;
 
+typedef struct lista_t
+{
+	BCP *primero;	// Puntero al primer elemento de la lista
+	BCP *ultimo;	// Puntero al ultimo elemento de la lista
+} lista_BCPs;
 
-/*
- * Prototipos de las rutinas que realizan cada llamada al sistema
+/**
+ * Variables globales
  */
-int sis_crear_proceso();
-int sis_terminar_proceso();
-int sis_escribir();
-int sis_obtener_id_pr();		// 16 / 10 / 2018
-int sis_dormir();				// 19 / 10 / 2018
+BCP *p_proc_actual = NULL;		// Puntero al proceso en ejecucion
+BCP tabla_procs[MAX_PROC];		// Array que almacena los procesos iniciados
+mutex tabla_mutex[NUM_MUT];		// Array con todos los mutex del sistema disponibles
+lista_BCPs cola_listos = { NULL, NULL };					// Cola de procesos listos
+lista_BCPs cola_bloqueados_dormir = { NULL, NULL };			// Cola de procesos bloqueados por la llamada al sistema dormir()
+lista_BCPs cola_bloqueados_mutex_libre = { NULL, NULL };	// Cola de procesos bloqueados por aquellos procesos que no obtuvieron ningun proceso
+lista_BCPs cola_bloqueados_mutex_lock = { NULL, NULL };		// Cola de procesos bloqueados por intentar hacer lock() sobre un mutex ya bloqueado
 
-/*
- * Variable global que contiene las rutinas que realizan cada llamada
- */
+// Array que contiene los punteros a las funciones que manejan las llamadas al sistema
 servicio tabla_servicios[NSERVICIOS] =	{	{sis_crear_proceso},
 											{sis_terminar_proceso},
 											{sis_escribir},
 											{sis_obtener_id_pr},
-											{sis_dormir}
+											{sis_dormir},
+											{sis_crear_mutex},
+											{sis_abrir_mutex},
+											{sis_lock_mutex},
+											{sis_unlock_mutex},
+											{sis_cerrar_mutex}
 										};
-
 #endif /* _KERNEL_H */
-
