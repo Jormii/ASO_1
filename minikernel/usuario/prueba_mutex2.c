@@ -17,7 +17,7 @@
 int main(){
 	int desc1, desc2;
 
-	printf("prueba_mutex comienza\n");
+	printf("prueba_mutex2 comienza\n");
 
 	if ((desc1=crear_mutex("m1", NO_RECURSIVO))<0)
 		printf("error creando m1. NO DEBE APARECER\n");

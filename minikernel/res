@@ -1,0 +1,968 @@
+init: comienza
+[SIS_CREAR_PROCESO()]
+	Proceso 0. Creando proceso
+init: termina
+[SIS_TERMINAR_PROCESO()]
+	Fin del proceso 0
+[LIBERAR_PROCESO()]
+
+El proceso 0 ha finalizado su ejecución. Cambio de contexto al proceso 1
+prueba_mutex1: comienza
+[SIS_CREAR_PROCESO()]
+	Proceso 1. Creando proceso
+[SIS_CREAR_PROCESO()]
+	Proceso 1. Creando proceso
+[SIS_CREAR_PROCESO()]
+	Proceso 1. Creando proceso
+[SIS_CREAR_PROCESO()]
+	Proceso 1. Creando proceso
+[SIS_CREAR_PROCESO()]
+	Proceso 1. Creando proceso
+prueba_mutex1: termina
+[SIS_TERMINAR_PROCESO()]
+	Fin del proceso 1
+[LIBERAR_PROCESO()]
+
+El proceso 1 ha finalizado su ejecución. Cambio de contexto al proceso 0
+creador1 comienza
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m1, Arg2 (Tipo): 1
+	Descriptor devuelto: 0
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m1, Arg2 (Tipo): 1
+	Error creando el mutex: ya existe un mutex con ese nombre
+error creando m1. DEBE SALIR
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m2, Arg2 (Tipo): 1
+	Descriptor devuelto: 1
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m3, Arg2 (Tipo): 1
+	Descriptor devuelto: 2
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m4, Arg2 (Tipo): 1
+	Descriptor devuelto: 3
+creador1 duerme 1 segundo
+[SIS_DORMIR()]
+	Segundos: 1	Ciclos: 100
+	Se pone a dormir el proceso 0
+creador2 comienza
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m5, Arg2 (Tipo): 1
+	Descriptor devuelto: 0
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m6, Arg2 (Tipo): 1
+	Descriptor devuelto: 1
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m7, Arg2 (Tipo): 1
+	Descriptor devuelto: 2
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m8, Arg2 (Tipo): 1
+	Descriptor devuelto: 3
+creador2 duerme 1 segundo
+[SIS_DORMIR()]
+	Segundos: 1	Ciclos: 100
+	Se pone a dormir el proceso 2
+creador3 comienza
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m9, Arg2 (Tipo): 1
+	Descriptor devuelto: 0
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m10, Arg2 (Tipo): 1
+	Descriptor devuelto: 1
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m11, Arg2 (Tipo): 1
+	Descriptor devuelto: 2
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m12, Arg2 (Tipo): 1
+	Descriptor devuelto: 3
+creador3 duerme 1 segundo
+[SIS_DORMIR()]
+	Segundos: 1	Ciclos: 100
+	Se pone a dormir el proceso 3
+creador4 comienza
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m13, Arg2 (Tipo): 1
+	Descriptor devuelto: 0
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m14, Arg2 (Tipo): 1
+	Descriptor devuelto: 1
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m15, Arg2 (Tipo): 1
+	Descriptor devuelto: 2
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m16, Arg2 (Tipo): 1
+	Descriptor devuelto: 3
+creador4 duerme 1 segundo
+[SIS_DORMIR()]
+	Segundos: 1	Ciclos: 100
+	Se pone a dormir el proceso 4
+abridor comienza
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m0
+	Error abriendo el mutex: no existe ningún mutex llamado m0
+error abriendo m0. DEBE SALIR
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m1
+	Se ha abierto el mutex m1. Descriptor: 0
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m2
+	Se ha abierto el mutex m2. Descriptor: 1
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m3
+	Se ha abierto el mutex m3. Descriptor: 2
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m4
+	Se ha abierto el mutex m4. Descriptor: 3
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m5
+	Error abriendo el mutex: se ha alcanzado el límite de mutex por proceso
+error abriendo m5. DEBE SALIR
+[SIS_CERRAR_MUTEX()]
+	Arg1 (Descriptor): 0
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m17, Arg2 (Tipo): 0
+	Descriptor devuelto: 0
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m17, Arg2 (Tipo): 0
+	Error creando el mutex: ya existe un mutex con ese nombre
+error creando m17. DEBE SALIR
+abridor termina
+[SIS_TERMINAR_PROCESO()]
+	Fin del proceso 5
+[LIBERAR_PROCESO()]
+[ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 100
+!	ID: 2, Ciclos dormido: 100
+!	ID: 3, Ciclos dormido: 100
+!	ID: 4, Ciclos dormido: 100
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 99
+!	ID: 2, Ciclos dormido: 99
+!	ID: 3, Ciclos dormido: 99
+!	ID: 4, Ciclos dormido: 99
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 98
+!	ID: 2, Ciclos dormido: 98
+!	ID: 3, Ciclos dormido: 98
+!	ID: 4, Ciclos dormido: 98
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 97
+!	ID: 2, Ciclos dormido: 97
+!	ID: 3, Ciclos dormido: 97
+!	ID: 4, Ciclos dormido: 97
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 96
+!	ID: 2, Ciclos dormido: 96
+!	ID: 3, Ciclos dormido: 96
+!	ID: 4, Ciclos dormido: 96
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 95
+!	ID: 2, Ciclos dormido: 95
+!	ID: 3, Ciclos dormido: 95
+!	ID: 4, Ciclos dormido: 95
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 94
+!	ID: 2, Ciclos dormido: 94
+!	ID: 3, Ciclos dormido: 94
+!	ID: 4, Ciclos dormido: 94
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 93
+!	ID: 2, Ciclos dormido: 93
+!	ID: 3, Ciclos dormido: 93
+!	ID: 4, Ciclos dormido: 93
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 92
+!	ID: 2, Ciclos dormido: 92
+!	ID: 3, Ciclos dormido: 92
+!	ID: 4, Ciclos dormido: 92
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 91
+!	ID: 2, Ciclos dormido: 91
+!	ID: 3, Ciclos dormido: 91
+!	ID: 4, Ciclos dormido: 91
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 90
+!	ID: 2, Ciclos dormido: 90
+!	ID: 3, Ciclos dormido: 90
+!	ID: 4, Ciclos dormido: 90
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 89
+!	ID: 2, Ciclos dormido: 89
+!	ID: 3, Ciclos dormido: 89
+!	ID: 4, Ciclos dormido: 89
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 88
+!	ID: 2, Ciclos dormido: 88
+!	ID: 3, Ciclos dormido: 88
+!	ID: 4, Ciclos dormido: 88
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 87
+!	ID: 2, Ciclos dormido: 87
+!	ID: 3, Ciclos dormido: 87
+!	ID: 4, Ciclos dormido: 87
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 86
+!	ID: 2, Ciclos dormido: 86
+!	ID: 3, Ciclos dormido: 86
+!	ID: 4, Ciclos dormido: 86
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 85
+!	ID: 2, Ciclos dormido: 85
+!	ID: 3, Ciclos dormido: 85
+!	ID: 4, Ciclos dormido: 85
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 84
+!	ID: 2, Ciclos dormido: 84
+!	ID: 3, Ciclos dormido: 84
+!	ID: 4, Ciclos dormido: 84
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 83
+!	ID: 2, Ciclos dormido: 83
+!	ID: 3, Ciclos dormido: 83
+!	ID: 4, Ciclos dormido: 83
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 82
+!	ID: 2, Ciclos dormido: 82
+!	ID: 3, Ciclos dormido: 82
+!	ID: 4, Ciclos dormido: 82
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 81
+!	ID: 2, Ciclos dormido: 81
+!	ID: 3, Ciclos dormido: 81
+!	ID: 4, Ciclos dormido: 81
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 80
+!	ID: 2, Ciclos dormido: 80
+!	ID: 3, Ciclos dormido: 80
+!	ID: 4, Ciclos dormido: 80
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 79
+!	ID: 2, Ciclos dormido: 79
+!	ID: 3, Ciclos dormido: 79
+!	ID: 4, Ciclos dormido: 79
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 78
+!	ID: 2, Ciclos dormido: 78
+!	ID: 3, Ciclos dormido: 78
+!	ID: 4, Ciclos dormido: 78
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 77
+!	ID: 2, Ciclos dormido: 77
+!	ID: 3, Ciclos dormido: 77
+!	ID: 4, Ciclos dormido: 77
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 76
+!	ID: 2, Ciclos dormido: 76
+!	ID: 3, Ciclos dormido: 76
+!	ID: 4, Ciclos dormido: 76
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 75
+!	ID: 2, Ciclos dormido: 75
+!	ID: 3, Ciclos dormido: 75
+!	ID: 4, Ciclos dormido: 75
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 74
+!	ID: 2, Ciclos dormido: 74
+!	ID: 3, Ciclos dormido: 74
+!	ID: 4, Ciclos dormido: 74
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 73
+!	ID: 2, Ciclos dormido: 73
+!	ID: 3, Ciclos dormido: 73
+!	ID: 4, Ciclos dormido: 73
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 72
+!	ID: 2, Ciclos dormido: 72
+!	ID: 3, Ciclos dormido: 72
+!	ID: 4, Ciclos dormido: 72
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 71
+!	ID: 2, Ciclos dormido: 71
+!	ID: 3, Ciclos dormido: 71
+!	ID: 4, Ciclos dormido: 71
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 70
+!	ID: 2, Ciclos dormido: 70
+!	ID: 3, Ciclos dormido: 70
+!	ID: 4, Ciclos dormido: 70
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 69
+!	ID: 2, Ciclos dormido: 69
+!	ID: 3, Ciclos dormido: 69
+!	ID: 4, Ciclos dormido: 69
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 68
+!	ID: 2, Ciclos dormido: 68
+!	ID: 3, Ciclos dormido: 68
+!	ID: 4, Ciclos dormido: 68
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 67
+!	ID: 2, Ciclos dormido: 67
+!	ID: 3, Ciclos dormido: 67
+!	ID: 4, Ciclos dormido: 67
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 66
+!	ID: 2, Ciclos dormido: 66
+!	ID: 3, Ciclos dormido: 66
+!	ID: 4, Ciclos dormido: 66
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 65
+!	ID: 2, Ciclos dormido: 65
+!	ID: 3, Ciclos dormido: 65
+!	ID: 4, Ciclos dormido: 65
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 64
+!	ID: 2, Ciclos dormido: 64
+!	ID: 3, Ciclos dormido: 64
+!	ID: 4, Ciclos dormido: 64
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 63
+!	ID: 2, Ciclos dormido: 63
+!	ID: 3, Ciclos dormido: 63
+!	ID: 4, Ciclos dormido: 63
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 62
+!	ID: 2, Ciclos dormido: 62
+!	ID: 3, Ciclos dormido: 62
+!	ID: 4, Ciclos dormido: 62
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 61
+!	ID: 2, Ciclos dormido: 61
+!	ID: 3, Ciclos dormido: 61
+!	ID: 4, Ciclos dormido: 61
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 60
+!	ID: 2, Ciclos dormido: 60
+!	ID: 3, Ciclos dormido: 60
+!	ID: 4, Ciclos dormido: 60
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 59
+!	ID: 2, Ciclos dormido: 59
+!	ID: 3, Ciclos dormido: 59
+!	ID: 4, Ciclos dormido: 59
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 58
+!	ID: 2, Ciclos dormido: 58
+!	ID: 3, Ciclos dormido: 58
+!	ID: 4, Ciclos dormido: 58
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 57
+!	ID: 2, Ciclos dormido: 57
+!	ID: 3, Ciclos dormido: 57
+!	ID: 4, Ciclos dormido: 57
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 56
+!	ID: 2, Ciclos dormido: 56
+!	ID: 3, Ciclos dormido: 56
+!	ID: 4, Ciclos dormido: 56
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 55
+!	ID: 2, Ciclos dormido: 55
+!	ID: 3, Ciclos dormido: 55
+!	ID: 4, Ciclos dormido: 55
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 54
+!	ID: 2, Ciclos dormido: 54
+!	ID: 3, Ciclos dormido: 54
+!	ID: 4, Ciclos dormido: 54
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 53
+!	ID: 2, Ciclos dormido: 53
+!	ID: 3, Ciclos dormido: 53
+!	ID: 4, Ciclos dormido: 53
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 52
+!	ID: 2, Ciclos dormido: 52
+!	ID: 3, Ciclos dormido: 52
+!	ID: 4, Ciclos dormido: 52
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 51
+!	ID: 2, Ciclos dormido: 51
+!	ID: 3, Ciclos dormido: 51
+!	ID: 4, Ciclos dormido: 51
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 50
+!	ID: 2, Ciclos dormido: 50
+!	ID: 3, Ciclos dormido: 50
+!	ID: 4, Ciclos dormido: 50
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 49
+!	ID: 2, Ciclos dormido: 49
+!	ID: 3, Ciclos dormido: 49
+!	ID: 4, Ciclos dormido: 49
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 48
+!	ID: 2, Ciclos dormido: 48
+!	ID: 3, Ciclos dormido: 48
+!	ID: 4, Ciclos dormido: 48
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 47
+!	ID: 2, Ciclos dormido: 47
+!	ID: 3, Ciclos dormido: 47
+!	ID: 4, Ciclos dormido: 47
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 46
+!	ID: 2, Ciclos dormido: 46
+!	ID: 3, Ciclos dormido: 46
+!	ID: 4, Ciclos dormido: 46
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 45
+!	ID: 2, Ciclos dormido: 45
+!	ID: 3, Ciclos dormido: 45
+!	ID: 4, Ciclos dormido: 45
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 44
+!	ID: 2, Ciclos dormido: 44
+!	ID: 3, Ciclos dormido: 44
+!	ID: 4, Ciclos dormido: 44
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 43
+!	ID: 2, Ciclos dormido: 43
+!	ID: 3, Ciclos dormido: 43
+!	ID: 4, Ciclos dormido: 43
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 42
+!	ID: 2, Ciclos dormido: 42
+!	ID: 3, Ciclos dormido: 42
+!	ID: 4, Ciclos dormido: 42
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 41
+!	ID: 2, Ciclos dormido: 41
+!	ID: 3, Ciclos dormido: 41
+!	ID: 4, Ciclos dormido: 41
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 40
+!	ID: 2, Ciclos dormido: 40
+!	ID: 3, Ciclos dormido: 40
+!	ID: 4, Ciclos dormido: 40
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 39
+!	ID: 2, Ciclos dormido: 39
+!	ID: 3, Ciclos dormido: 39
+!	ID: 4, Ciclos dormido: 39
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 38
+!	ID: 2, Ciclos dormido: 38
+!	ID: 3, Ciclos dormido: 38
+!	ID: 4, Ciclos dormido: 38
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 37
+!	ID: 2, Ciclos dormido: 37
+!	ID: 3, Ciclos dormido: 37
+!	ID: 4, Ciclos dormido: 37
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 36
+!	ID: 2, Ciclos dormido: 36
+!	ID: 3, Ciclos dormido: 36
+!	ID: 4, Ciclos dormido: 36
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 35
+!	ID: 2, Ciclos dormido: 35
+!	ID: 3, Ciclos dormido: 35
+!	ID: 4, Ciclos dormido: 35
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 34
+!	ID: 2, Ciclos dormido: 34
+!	ID: 3, Ciclos dormido: 34
+!	ID: 4, Ciclos dormido: 34
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 33
+!	ID: 2, Ciclos dormido: 33
+!	ID: 3, Ciclos dormido: 33
+!	ID: 4, Ciclos dormido: 33
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 32
+!	ID: 2, Ciclos dormido: 32
+!	ID: 3, Ciclos dormido: 32
+!	ID: 4, Ciclos dormido: 32
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 31
+!	ID: 2, Ciclos dormido: 31
+!	ID: 3, Ciclos dormido: 31
+!	ID: 4, Ciclos dormido: 31
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 30
+!	ID: 2, Ciclos dormido: 30
+!	ID: 3, Ciclos dormido: 30
+!	ID: 4, Ciclos dormido: 30
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 29
+!	ID: 2, Ciclos dormido: 29
+!	ID: 3, Ciclos dormido: 29
+!	ID: 4, Ciclos dormido: 29
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 28
+!	ID: 2, Ciclos dormido: 28
+!	ID: 3, Ciclos dormido: 28
+!	ID: 4, Ciclos dormido: 28
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 27
+!	ID: 2, Ciclos dormido: 27
+!	ID: 3, Ciclos dormido: 27
+!	ID: 4, Ciclos dormido: 27
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 26
+!	ID: 2, Ciclos dormido: 26
+!	ID: 3, Ciclos dormido: 26
+!	ID: 4, Ciclos dormido: 26
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 25
+!	ID: 2, Ciclos dormido: 25
+!	ID: 3, Ciclos dormido: 25
+!	ID: 4, Ciclos dormido: 25
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 24
+!	ID: 2, Ciclos dormido: 24
+!	ID: 3, Ciclos dormido: 24
+!	ID: 4, Ciclos dormido: 24
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 23
+!	ID: 2, Ciclos dormido: 23
+!	ID: 3, Ciclos dormido: 23
+!	ID: 4, Ciclos dormido: 23
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 22
+!	ID: 2, Ciclos dormido: 22
+!	ID: 3, Ciclos dormido: 22
+!	ID: 4, Ciclos dormido: 22
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 21
+!	ID: 2, Ciclos dormido: 21
+!	ID: 3, Ciclos dormido: 21
+!	ID: 4, Ciclos dormido: 21
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 20
+!	ID: 2, Ciclos dormido: 20
+!	ID: 3, Ciclos dormido: 20
+!	ID: 4, Ciclos dormido: 20
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 19
+!	ID: 2, Ciclos dormido: 19
+!	ID: 3, Ciclos dormido: 19
+!	ID: 4, Ciclos dormido: 19
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 18
+!	ID: 2, Ciclos dormido: 18
+!	ID: 3, Ciclos dormido: 18
+!	ID: 4, Ciclos dormido: 18
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 17
+!	ID: 2, Ciclos dormido: 17
+!	ID: 3, Ciclos dormido: 17
+!	ID: 4, Ciclos dormido: 17
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 16
+!	ID: 2, Ciclos dormido: 16
+!	ID: 3, Ciclos dormido: 16
+!	ID: 4, Ciclos dormido: 16
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 15
+!	ID: 2, Ciclos dormido: 15
+!	ID: 3, Ciclos dormido: 15
+!	ID: 4, Ciclos dormido: 15
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 14
+!	ID: 2, Ciclos dormido: 14
+!	ID: 3, Ciclos dormido: 14
+!	ID: 4, Ciclos dormido: 14
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 13
+!	ID: 2, Ciclos dormido: 13
+!	ID: 3, Ciclos dormido: 13
+!	ID: 4, Ciclos dormido: 13
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 12
+!	ID: 2, Ciclos dormido: 12
+!	ID: 3, Ciclos dormido: 12
+!	ID: 4, Ciclos dormido: 12
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 11
+!	ID: 2, Ciclos dormido: 11
+!	ID: 3, Ciclos dormido: 11
+!	ID: 4, Ciclos dormido: 11
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 10
+!	ID: 2, Ciclos dormido: 10
+!	ID: 3, Ciclos dormido: 10
+!	ID: 4, Ciclos dormido: 10
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 9
+!	ID: 2, Ciclos dormido: 9
+!	ID: 3, Ciclos dormido: 9
+!	ID: 4, Ciclos dormido: 9
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 8
+!	ID: 2, Ciclos dormido: 8
+!	ID: 3, Ciclos dormido: 8
+!	ID: 4, Ciclos dormido: 8
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 7
+!	ID: 2, Ciclos dormido: 7
+!	ID: 3, Ciclos dormido: 7
+!	ID: 4, Ciclos dormido: 7
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 6
+!	ID: 2, Ciclos dormido: 6
+!	ID: 3, Ciclos dormido: 6
+!	ID: 4, Ciclos dormido: 6
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 5
+!	ID: 2, Ciclos dormido: 5
+!	ID: 3, Ciclos dormido: 5
+!	ID: 4, Ciclos dormido: 5
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 4
+!	ID: 2, Ciclos dormido: 4
+!	ID: 3, Ciclos dormido: 4
+!	ID: 4, Ciclos dormido: 4
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 3
+!	ID: 2, Ciclos dormido: 3
+!	ID: 3, Ciclos dormido: 3
+!	ID: 4, Ciclos dormido: 3
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 2
+!	ID: 2, Ciclos dormido: 2
+!	ID: 3, Ciclos dormido: 2
+!	ID: 4, Ciclos dormido: 2
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 1
+!	ID: 2, Ciclos dormido: 1
+!	ID: 3, Ciclos dormido: 1
+!	ID: 4, Ciclos dormido: 1
+![ESPERA_INT()]
+	No hay procesos en la cola de procesos listos. Esperando una interrupción
+[INT_RELOJ()]	Tratando interrupción de reloj
+-> PROCESANDO PROCESOS BLOQUEADOS
+	ID: 0, Ciclos dormido: 0
+!	ID: 0 se ha despertado
+	ID: 2, Ciclos dormido: 0
+!	ID: 2 se ha despertado
+	ID: 3, Ciclos dormido: 0
+!	ID: 3 se ha despertado
+	ID: 4, Ciclos dormido: 0
+!	ID: 4 se ha despertado
+
+El proceso 5 ha finalizado su ejecución. Cambio de contexto al proceso 0
+creador1 termina
+[SIS_TERMINAR_PROCESO()]
+	Fin del proceso 0
+[LIBERAR_PROCESO()]
+
+El proceso 0 ha finalizado su ejecución. Cambio de contexto al proceso 2
+creador2 termina
+[SIS_TERMINAR_PROCESO()]
+	Fin del proceso 2
+[LIBERAR_PROCESO()]
+
+El proceso 2 ha finalizado su ejecución. Cambio de contexto al proceso 3
+creador3 termina
+[SIS_TERMINAR_PROCESO()]
+	Fin del proceso 3
+[LIBERAR_PROCESO()]
+
+El proceso 3 ha finalizado su ejecución. Cambio de contexto al proceso 4
+creador4 termina
+[SIS_TERMINAR_PROCESO()]
+	Fin del proceso 4
+[LIBERAR_PROCESO()]
