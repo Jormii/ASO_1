@@ -26,20 +26,20 @@ prueba_mutex1: termina
 El proceso 1 ha finalizado su ejecución. Cambio de contexto al proceso 0
 creador1 comienza
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m1, Arg2 (Tipo): 1
+	Arg1 (Nombre): m1, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 0
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m1, Arg2 (Tipo): 1
+	Arg1 (Nombre): m1, Arg2 (Tipo): 1, No recursivo
 	Error creando el mutex: ya existe un mutex con ese nombre
 error creando m1. DEBE SALIR
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m2, Arg2 (Tipo): 1
+	Arg1 (Nombre): m2, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 1
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m3, Arg2 (Tipo): 1
+	Arg1 (Nombre): m3, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 2
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m4, Arg2 (Tipo): 1
+	Arg1 (Nombre): m4, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 3
 creador1 duerme 1 segundo
 [SIS_DORMIR()]
@@ -47,16 +47,16 @@ creador1 duerme 1 segundo
 	Se pone a dormir el proceso 0
 creador2 comienza
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m5, Arg2 (Tipo): 1
+	Arg1 (Nombre): m5, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 0
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m6, Arg2 (Tipo): 1
+	Arg1 (Nombre): m6, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 1
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m7, Arg2 (Tipo): 1
+	Arg1 (Nombre): m7, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 2
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m8, Arg2 (Tipo): 1
+	Arg1 (Nombre): m8, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 3
 creador2 duerme 1 segundo
 [SIS_DORMIR()]
@@ -64,16 +64,16 @@ creador2 duerme 1 segundo
 	Se pone a dormir el proceso 2
 creador3 comienza
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m9, Arg2 (Tipo): 1
+	Arg1 (Nombre): m9, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 0
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m10, Arg2 (Tipo): 1
+	Arg1 (Nombre): m10, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 1
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m11, Arg2 (Tipo): 1
+	Arg1 (Nombre): m11, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 2
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m12, Arg2 (Tipo): 1
+	Arg1 (Nombre): m12, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 3
 creador3 duerme 1 segundo
 [SIS_DORMIR()]
@@ -81,16 +81,16 @@ creador3 duerme 1 segundo
 	Se pone a dormir el proceso 3
 creador4 comienza
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m13, Arg2 (Tipo): 1
+	Arg1 (Nombre): m13, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 0
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m14, Arg2 (Tipo): 1
+	Arg1 (Nombre): m14, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 1
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m15, Arg2 (Tipo): 1
+	Arg1 (Nombre): m15, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 2
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m16, Arg2 (Tipo): 1
+	Arg1 (Nombre): m16, Arg2 (Tipo): 1, No recursivo
 	Descriptor devuelto: 3
 creador4 duerme 1 segundo
 [SIS_DORMIR()]
@@ -120,10 +120,10 @@ error abriendo m5. DEBE SALIR
 [SIS_CERRAR_MUTEX()]
 	Arg1 (Descriptor): 0
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m17, Arg2 (Tipo): 0
+	Arg1 (Nombre): m17, Arg2 (Tipo): 0, Recursivo
 	Descriptor devuelto: 0
 [SIS_CREAR_MUTEX()
-	Arg1 (Nombre): m17, Arg2 (Tipo): 0
+	Arg1 (Nombre): m17, Arg2 (Tipo): 0, Recursivo
 	Error creando el mutex: ya existe un mutex con ese nombre
 error creando m17. DEBE SALIR
 abridor termina
