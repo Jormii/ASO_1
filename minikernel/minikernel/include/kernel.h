@@ -18,9 +18,9 @@
 #define MUTEX_TIPO_RECURSIVO 0
 #define MUTEX_TIPO_NO_RECURSIVO 1
 #define MUTEX_ESTADO_LIBRE 0
-#define MUTEX_ESTADO_BLOQUEADO 1
-#define MUTEX_CERRADO 0
-#define MUTEX_ABIERTO 1
+#define MUTEX_ESTADO_CREADO 1
+// #define MUTEX_ESTADO_ABIERTO 2
+#define MUTEX_ESTADO_BLOQUEADO 2
 
 /**
  * Declaracion de tipos
@@ -29,7 +29,7 @@ typedef struct BCP_t BCP;
 typedef struct mutex_t mutex;
 typedef struct servicio_t servicio;
 typedef struct lista_t lista_BCPs;
-
+typedef struct terminal_t terminal;
 /**
  * Declaracion de funciones
  */
@@ -61,6 +61,13 @@ static void iniciar_tabla_mutex();
 static int buscar_descriptor_libre();
 static int buscar_nombre_mutex(char *nombre_mutex);
 static int buscar_mutex_libre();
+static BCP* buscar_procesos_con_mutex(mutex *mutex);	// Busca entre la lista de procesos bloqueados debidos a lock
+														// un proceso que haya abierto el mutex argumento
+static void unlock(int descriptor, mutex *mutex_unlock);
+static void cerrar(int descriptor, mutex *mutex_cerrar);
+
+// Terminal
+static void iniciar_terminal();
 
 // Llamadas al sistema
 static void tratar_llamsis();	// Tratamiento de llamadas al sistema
@@ -74,6 +81,7 @@ int sis_abrir_mutex();
 int sis_lock_mutex();
 int sis_unlock_mutex();
 int sis_cerrar_mutex();
+int sis_leer_caracter();	// 11/11/2018
 
 /**
  * Definicion de los structs
@@ -94,12 +102,12 @@ typedef struct BCP_t
 typedef struct mutex_t
 {
     char nombre[MAX_NOM_MUT];	// Nombre identificador y univoco del mutex
+	int mutex_id;				// Id del mutex. Constante
     int estado;					// Estado actual del mutex: LIBRE | BLOQUEADO
-	int abierto;				// Indica si el mutex ha sido abierto
 	int tipo;					// Indica el tipo del mutex: RECURSIVO | NO_RECURSIVO
-	int num_bloqueos;			// ???
+	int num_locks;				// Representa cuantos locks se han realizado sobre el mutex recursivo
 	int num_procesos_bloqueados;	// Numero de procesos bloqueados por el mutex en un instante de tiempo
-	int id_proc_bloq;			// ID del proceso que realizo lock sobre el mutex
+	int id_proc_bloq;			// ID del proceso que posee el mutex
 } mutex;
 
 typedef struct servicio_t
@@ -113,6 +121,14 @@ typedef struct lista_t
 	BCP *ultimo;	// Puntero al ultimo elemento de la lista
 } lista_BCPs;
 
+typedef struct terminal_t
+{
+	char buffer[TAM_BUF_TERM];
+	int indice;
+	int indice_proc;
+	int elementos;
+} terminal;
+
 /**
  * Variables globales
  */
@@ -123,6 +139,8 @@ lista_BCPs cola_listos = { NULL, NULL };					// Cola de procesos listos
 lista_BCPs cola_bloqueados_dormir = { NULL, NULL };			// Cola de procesos bloqueados por la llamada al sistema dormir()
 lista_BCPs cola_bloqueados_mutex_libre = { NULL, NULL };	// Cola de procesos bloqueados por aquellos procesos que no obtuvieron ningun proceso
 lista_BCPs cola_bloqueados_mutex_lock = { NULL, NULL };		// Cola de procesos bloqueados por intentar hacer lock() sobre un mutex ya bloqueado
+lista_BCPs cola_bloqueados_terminal = { NULL, NULL };
+terminal terminal_sis;
 
 // Array que contiene los punteros a las funciones que manejan las llamadas al sistema
 servicio tabla_servicios[NSERVICIOS] =	{	{sis_crear_proceso},
@@ -134,6 +152,7 @@ servicio tabla_servicios[NSERVICIOS] =	{	{sis_crear_proceso},
 											{sis_abrir_mutex},
 											{sis_lock_mutex},
 											{sis_unlock_mutex},
-											{sis_cerrar_mutex}
+											{sis_cerrar_mutex},
+											{sis_leer_caracter}
 										};
 #endif /* _KERNEL_H */

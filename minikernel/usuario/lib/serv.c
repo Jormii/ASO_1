@@ -26,7 +26,6 @@
 
 int llamsis(int llamada, int nargs, ... /* args */);
 
-
 /*
  *
  * Funciones interfaz a las llamadas al sistema
@@ -65,25 +64,30 @@ int dormir(unsigned int s)
  */
 int crear_mutex(char *nombre, int tipo)
 {
-	return llamsis(CREAR_MUTEX, (long)nombre, (long)tipo);
+	return llamsis(CREAR_MUTEX, 2, (long)nombre, (long)tipo);
 }
 
 int abrir_mutex(char *nombre)
 {
-	return llamsis(ABRIR_MUTEX, (long)nombre);
+	return llamsis(ABRIR_MUTEX, 1, (long)nombre);
 }
 
 int lock(unsigned int mutex_id)
 {
-	return llamsis(LOCK_MUTEX, (long)mutex_id);
+	return llamsis(LOCK_MUTEX, 1, (long)mutex_id);
 }
 
 int unlock(unsigned int mutex_id)
 {
-	return llamsis(UNLOCK_MUTEX, (long)mutex_id);
+	return llamsis(UNLOCK_MUTEX, 1, (long)mutex_id);
 }
 
 int cerrar_mutex(unsigned int mutex_id)
 {
-	return llamsis(CERRAR_MUTEX, (long)mutex_id);
+	return llamsis(CERRAR_MUTEX, 1, (long)mutex_id);
+}
+
+int leer_caracter()
+{
+	return llamsis(LEER_CARACTER, 0);
 }

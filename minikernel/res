@@ -1,0 +1,240 @@
+init: comienza
+[SIS_CREAR_PROCESO()]
+	Proceso 0. Creando proceso
+init: termina
+[SIS_TERMINAR_PROCESO()]
+	Fin del proceso 0
+[LIBERAR_PROCESO()]
+
+El proceso 0 ha finalizado su ejecución. Cambio de contexto al proceso 1
+prueba_term: comienza
+[SIS_CREAR_PROCESO()]
+	Proceso 1. Creando proceso
+[SIS_CREAR_PROCESO()]
+	Proceso 1. Creando proceso
+prueba_term: termina
+[SIS_TERMINAR_PROCESO()]
+	Fin del proceso 1
+[LIBERAR_PROCESO()]
+
+El proceso 1 ha finalizado su ejecución. Cambio de contexto al proceso 0
+[SIS_OBTENER_ID_PR()]
+ID del proceso actual: 0
+lector (0): comienza
+lector (0): pulsa caracteres a partir de ahora
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 0
+[SIS_OBTENER_ID_PR()]
+ID del proceso actual: 2
+lector (2): comienza
+lector (2): pulsa caracteres a partir de ahora
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: k
+	Se ha introducido en la posicion 0 el caracter k. Hay 1 espacios ocupados en el buffer
+	El proceso 0 ha leido el caracter k del terminal (indice 0). Quedan 0 espacios ocupados en el buffer
+lector (0): has pulsado k
+lector (0) duerme 3 segundos
+[SIS_DORMIR()]
+	Segundos: 3	Ciclos: 300
+	Se pone a dormir el proceso 0
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: m
+	Se ha introducido en la posicion 1 el caracter m. Hay 1 espacios ocupados en el buffer
+	El proceso 2 ha leido el caracter k del terminal (indice 0). Quedan 0 espacios ocupados en el buffer
+lector (2): has pulsado k
+lector (2) duerme 3 segundos
+[SIS_DORMIR()]
+	Segundos: 3	Ciclos: 300
+	Se pone a dormir el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: s
+	Se ha introducido en la posicion 2 el caracter s. Hay 1 espacios ocupados en el buffer
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: y
+	Se ha introducido en la posicion 3 el caracter y. Hay 2 espacios ocupados en el buffer
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: a
+	Se ha introducido en la posicion 4 el caracter a. Hay 3 espacios ocupados en el buffer
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: o
+	Se ha introducido en la posicion 5 el caracter o. Hay 4 espacios ocupados en el buffer
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: n
+	Se ha introducido en la posicion 6 el caracter n. Hay 5 espacios ocupados en el buffer
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: d
+	Se ha introducido en la posicion 7 el caracter d. Hay 6 espacios ocupados en el buffer
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: v
+	Se ha introducido en la posicion 0 el caracter v. Hay 7 espacios ocupados en el buffer
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: s
+	Se ha introducido en la posicion 1 el caracter s. Hay 8 espacios ocupados en el buffer
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: a
+	El buffer está lleno. Se ignora el caracter a
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: 8
+	El buffer está lleno. Se ignora el caracter 8
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: h
+	El buffer está lleno. Se ignora el caracter h
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: o
+	El buffer está lleno. Se ignora el caracter o
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: n
+	El buffer está lleno. Se ignora el caracter n
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: s
+	El buffer está lleno. Se ignora el caracter s
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: a
+	El buffer está lleno. Se ignora el caracter a
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: j
+	El buffer está lleno. Se ignora el caracter j
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: g
+	El buffer está lleno. Se ignora el caracter g
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: v
+	El buffer está lleno. Se ignora el caracter v
+	No hay procesos bloqueados por [SIS_LEER_TERMINAL]
+[SIS_LEER_CARACTER]
+	El proceso 0 ha leido el caracter s del terminal (indice 2). Quedan 7 espacios ocupados en el buffer
+lector (0): has pulsado s
+[SIS_LEER_CARACTER]
+	El proceso 0 ha leido el caracter y del terminal (indice 3). Quedan 6 espacios ocupados en el buffer
+lector (0): has pulsado y
+[SIS_LEER_CARACTER]
+	El proceso 0 ha leido el caracter a del terminal (indice 4). Quedan 5 espacios ocupados en el buffer
+lector (0): has pulsado a
+[SIS_LEER_CARACTER]
+	El proceso 0 ha leido el caracter o del terminal (indice 5). Quedan 4 espacios ocupados en el buffer
+lector (0): has pulsado o
+[SIS_LEER_CARACTER]
+	El proceso 0 ha leido el caracter n del terminal (indice 6). Quedan 3 espacios ocupados en el buffer
+lector (0): has pulsado n
+[SIS_LEER_CARACTER]
+	El proceso 0 ha leido el caracter d del terminal (indice 7). Quedan 2 espacios ocupados en el buffer
+lector (0): has pulsado d
+[SIS_LEER_CARACTER]
+	El proceso 0 ha leido el caracter v del terminal (indice 0). Quedan 1 espacios ocupados en el buffer
+lector (0): has pulsado v
+[SIS_LEER_CARACTER]
+	El proceso 0 ha leido el caracter s del terminal (indice 1). Quedan 0 espacios ocupados en el buffer
+lector (0): has pulsado s
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 0
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: s
+	Se ha introducido en la posicion 2 el caracter s. Hay 1 espacios ocupados en el buffer
+	El proceso 0 ha leido el caracter s del terminal (indice 2). Quedan 0 espacios ocupados en el buffer
+lector (0): has pulsado s
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 0
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: 8
+	Se ha introducido en la posicion 3 el caracter 8. Hay 1 espacios ocupados en el buffer
+	El proceso 0 ha leido el caracter 8 del terminal (indice 3). Quedan 0 espacios ocupados en el buffer
+lector (0): has pulsado 8
+lector (0): termina
+[SIS_TERMINAR_PROCESO()]
+	Fin del proceso 0
+[LIBERAR_PROCESO()]
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: u
+	Se ha introducido en la posicion 4 el caracter u. Hay 1 espacios ocupados en el buffer
+
+El proceso 0 ha finalizado su ejecución. Cambio de contexto al proceso 2
+	El proceso 2 ha leido el caracter 8 del terminal (indice 3). Quedan 0 espacios ocupados en el buffer
+lector (2): has pulsado 8
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: y
+	Se ha introducido en la posicion 5 el caracter y. Hay 1 espacios ocupados en el buffer
+	El proceso 2 ha leido el caracter y del terminal (indice 5). Quedan 0 espacios ocupados en el buffer
+lector (2): has pulsado y
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: s
+	Se ha introducido en la posicion 6 el caracter s. Hay 1 espacios ocupados en el buffer
+	El proceso 2 ha leido el caracter s del terminal (indice 6). Quedan 0 espacios ocupados en el buffer
+lector (2): has pulsado s
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: g
+	Se ha introducido en la posicion 7 el caracter g. Hay 1 espacios ocupados en el buffer
+	El proceso 2 ha leido el caracter g del terminal (indice 7). Quedan 0 espacios ocupados en el buffer
+lector (2): has pulsado g
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: i
+	Se ha introducido en la posicion 0 el caracter i. Hay 1 espacios ocupados en el buffer
+	El proceso 2 ha leido el caracter i del terminal (indice 0). Quedan 0 espacios ocupados en el buffer
+lector (2): has pulsado i
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: b
+	Se ha introducido en la posicion 1 el caracter b. Hay 1 espacios ocupados en el buffer
+	El proceso 2 ha leido el caracter b del terminal (indice 1). Quedan 0 espacios ocupados en el buffer
+lector (2): has pulsado b
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: n
+	Se ha introducido en la posicion 2 el caracter n. Hay 1 espacios ocupados en el buffer
+	El proceso 2 ha leido el caracter n del terminal (indice 2). Quedan 0 espacios ocupados en el buffer
+lector (2): has pulsado n
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: b
+	Se ha introducido en la posicion 3 el caracter b. Hay 1 espacios ocupados en el buffer
+	El proceso 2 ha leido el caracter b del terminal (indice 3). Quedan 0 espacios ocupados en el buffer
+lector (2): has pulsado b
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: g
+	Se ha introducido en la posicion 4 el caracter g. Hay 1 espacios ocupados en el buffer
+	El proceso 2 ha leido el caracter g del terminal (indice 4). Quedan 0 espacios ocupados en el buffer
+lector (2): has pulsado g
+[SIS_LEER_CARACTER]
+	Se va a bloquear el proceso 2
+[INT_TERMINAL()]
+	Tratando interrupción de terminal. Caracter: i
+	Se ha introducido en la posicion 5 el caracter i. Hay 1 espacios ocupados en el buffer
+	El proceso 2 ha leido el caracter i del terminal (indice 5). Quedan 0 espacios ocupados en el buffer
+lector (2): has pulsado i
+lector (2): termina
+[SIS_TERMINAR_PROCESO()]
+	Fin del proceso 2
+[LIBERAR_PROCESO()]

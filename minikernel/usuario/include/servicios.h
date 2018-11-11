@@ -51,5 +51,7 @@ int lock(unsigned int mutex_id);
 int unlock(unsigned int mutex_id);
 int cerrar_mutex(unsigned int mutex_id);
 
+int leer_caracter();	// 11/11/2018
+
 #endif /* SERVICIOS_H */
 
