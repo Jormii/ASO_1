@@ -18,9 +18,9 @@
 #define MUTEX_TIPO_RECURSIVO 0
 #define MUTEX_TIPO_NO_RECURSIVO 1
 #define MUTEX_ESTADO_LIBRE 0
-#define MUTEX_ESTADO_BLOQUEADO 1
-#define MUTEX_CERRADO 0
-#define MUTEX_ABIERTO 1
+#define MUTEX_ESTADO_CREADO 1
+// #define MUTEX_ESTADO_ABIERTO 2
+#define MUTEX_ESTADO_BLOQUEADO 2
 
 /**
  * Declaracion de tipos
@@ -61,6 +61,10 @@ static void iniciar_tabla_mutex();
 static int buscar_descriptor_libre();
 static int buscar_nombre_mutex(char *nombre_mutex);
 static int buscar_mutex_libre();
+static BCP* buscar_procesos_con_mutex(mutex *mutex);	// Busca entre la lista de procesos bloqueados debidos a lock
+														// un proceso que haya abierto el mutex argumento
+static void unlock(int descriptor, mutex *mutex_unlock);
+static void cerrar(int descriptor, mutex *mutex_cerrar);
 
 // Llamadas al sistema
 static void tratar_llamsis();	// Tratamiento de llamadas al sistema
@@ -94,12 +98,12 @@ typedef struct BCP_t
 typedef struct mutex_t
 {
     char nombre[MAX_NOM_MUT];	// Nombre identificador y univoco del mutex
+	int mutex_id;				// Id del mutex. Constante
     int estado;					// Estado actual del mutex: LIBRE | BLOQUEADO
-	int abierto;				// Indica si el mutex ha sido abierto
 	int tipo;					// Indica el tipo del mutex: RECURSIVO | NO_RECURSIVO
-	int num_bloqueos;			// ???
+	int num_locks;				// Representa cuantos locks se han realizado sobre el mutex recursivo
 	int num_procesos_bloqueados;	// Numero de procesos bloqueados por el mutex en un instante de tiempo
-	int id_proc_bloq;			// ID del proceso que realizo lock sobre el mutex
+	int id_proc_bloq;			// ID del proceso que posee el mutex
 } mutex;
 
 typedef struct servicio_t

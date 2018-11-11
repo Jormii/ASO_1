@@ -1,0 +1,114 @@
+init: comienza
+init: termina
+[LIBERAR_PROCESO()]
+prueba_mutex1: comienza
+prueba_mutex1: termina
+[LIBERAR_PROCESO()]
+creador1 comienza
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m1, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m1 con el descriptor 0
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m1, Arg2 (Tipo): 1, No recursivo
+	Error creando el mutex: ya existe un mutex con ese nombre
+error creando m1. DEBE SALIR
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m2, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m2 con el descriptor 1
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m3, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m3 con el descriptor 2
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m4, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m4 con el descriptor 3
+creador1 duerme 1 segundo
+creador2 comienza
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m5, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m5 con el descriptor 0
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m6, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m6 con el descriptor 1
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m7, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m7 con el descriptor 2
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m8, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m8 con el descriptor 3
+creador2 duerme 1 segundo
+creador3 comienza
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m9, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m9 con el descriptor 0
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m10, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m10 con el descriptor 1
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m11, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m11 con el descriptor 2
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m12, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m12 con el descriptor 3
+creador3 duerme 1 segundo
+creador4 comienza
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m13, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m13 con el descriptor 0
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m14, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m14 con el descriptor 1
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m15, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m15 con el descriptor 2
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m16, Arg2 (Tipo): 1, No recursivo
+	Se ha creado el mutex m16 con el descriptor 3
+creador4 duerme 1 segundo
+abridor comienza
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m0
+	Error abriendo el mutex: no existe ningún mutex llamado m0
+error abriendo m0. DEBE SALIR
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m1
+	Se ha abierto el mutex m1. Descriptor: 0
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m2
+	Se ha abierto el mutex m2. Descriptor: 1
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m3
+	Se ha abierto el mutex m3. Descriptor: 2
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m4
+	Se ha abierto el mutex m4. Descriptor: 3
+[SIS_ABRIR_MUTEX()]
+	Arg1 (Nombre): m5
+	Error abriendo el mutex: se ha alcanzado el límite de mutex por proceso
+error abriendo m5. DEBE SALIR
+[SIS_CERRAR_MUTEX()]
+	Arg1 (Descriptor): 0
+	Numero de procesos bloqueados por el mutex m1: 0
+	El mutex no tiene otros procesos bloqueados
+	Se va a buscar un mutex bloqueado por SIS_CREAR_MUTEX
+	No se ha encontrado ninguno
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m17, Arg2 (Tipo): 0, Recursivo
+	Se ha creado el mutex m17 con el descriptor 0
+[SIS_CREAR_MUTEX()
+	Arg1 (Nombre): m17, Arg2 (Tipo): 0, Recursivo
+	Error creando el mutex: ya existe un mutex con ese nombre
+error creando m17. DEBE SALIR
+abridor termina
+[LIBERAR_PROCESO()]
+	ID: 0 se ha despertado
+	ID: 2 se ha despertado
+	ID: 3 se ha despertado
+	ID: 4 se ha despertado
+creador1 termina
+[LIBERAR_PROCESO()]
+creador2 termina
+[LIBERAR_PROCESO()]
+creador3 termina
+[LIBERAR_PROCESO()]
+creador4 termina
+[LIBERAR_PROCESO()]

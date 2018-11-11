@@ -24,6 +24,7 @@ int main(){
 
 	if (lock(desc)<0)
 		printf("error en lock de mutex. NO DEBE APARECER\n");
+	// Se bloquea porque ya se ha hecho lock
 
 	/* segundo lock sobre semáforo recursivo -> correcto */
 	if (lock(desc)<0)
