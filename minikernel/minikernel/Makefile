@@ -1,27 +1,19 @@
 #
-# minikernel/Makefile
-#	Makefile del sistema 
+# Makefile
+# 	Makefile global del sistema
 #
+all: arranque sistema programas
 
-INCLUDEDIR=include
-CC=gcc
-CFLAGS=-g -Wall -fPIC -I$(INCLUDEDIR)
+arranque:
+	@cd boot; make
 
-all: version kernel
+sistema:
+	cd minikernel; make
 
-version:
-	@ln -sf HAL.o_`getconf LONG_BIT` HAL.o
-
-
-OBJS_KER=kernel.o HAL.o 
-BIB_KER=-ldl
-
-kernel.o: $(INCLUDEDIR)/kernel.h $(INCLUDEDIR)/HAL.h $(INCLUDEDIR)/const.h $(INCLUDEDIR)/llamsis.h
-
-HAL.o: $(INCLUDEDIR)/HAL.h $(INCLUDEDIR)/const.h
-
-kernel: $(OBJS_KER)
-	$(CC) -shared -o $@ $(OBJS_KER) $(BIB_KER)
+programas:
+	cd usuario; make
 
 clean:
-	rm -f kernel.o kernel HAL.o
+	@cd boot; make clean
+	cd minikernel; make clean
+	cd usuario; make clean

@@ -1,0 +1,3513 @@
+
+[TRATAR_LLAMSIS] init: comienza
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 0 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] init: termina
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 0
+
+[LIBERAR_PROCESO]
+	El proceso 0 ha finalizado su ejecucion. Cambio de contexto al proceso 1
+
+[TRATAR_LLAMSIS] prueba_dormir: comienza
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 1 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 1 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] prueba_dormir: termina
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 1
+
+[LIBERAR_PROCESO]
+	El proceso 1 ha finalizado su ejecucion. Cambio de contexto al proceso 0
+
+[TRATAR_LLAMSIS] 
+[SIS_OBTENER_ID_PR]
+	ID del proceso actual: 0
+
+[TRATAR_LLAMSIS] dormilon (0): comienza
+
+[TRATAR_LLAMSIS] dormilon (0) duerme 1 segundo/s
+
+[TRATAR_LLAMSIS] 
+[SIS_DORMIR]
+	Argumentos. Segundos: 1 	Ciclos: 100
+	Se pone a dormir el proceso 0
+
+[TRATAR_LLAMSIS] 
+[SIS_OBTENER_ID_PR]
+	ID del proceso actual: 2
+
+[TRATAR_LLAMSIS] dormilon (2): comienza
+
+[TRATAR_LLAMSIS] dormilon (2) duerme 1 segundo/s
+
+[TRATAR_LLAMSIS] 
+[SIS_DORMIR]
+	Argumentos. Segundos: 1 	Ciclos: 100
+	Se pone a dormir el proceso 2
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 100 ciclos para despertarse
+	Al proceso 2 le quedan 100 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 99 ciclos para despertarse
+	Al proceso 2 le quedan 99 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 98 ciclos para despertarse
+	Al proceso 2 le quedan 98 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 97 ciclos para despertarse
+	Al proceso 2 le quedan 97 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 96 ciclos para despertarse
+	Al proceso 2 le quedan 96 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 95 ciclos para despertarse
+	Al proceso 2 le quedan 95 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 94 ciclos para despertarse
+	Al proceso 2 le quedan 94 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 93 ciclos para despertarse
+	Al proceso 2 le quedan 93 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 92 ciclos para despertarse
+	Al proceso 2 le quedan 92 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 91 ciclos para despertarse
+	Al proceso 2 le quedan 91 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 90 ciclos para despertarse
+	Al proceso 2 le quedan 90 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 89 ciclos para despertarse
+	Al proceso 2 le quedan 89 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 88 ciclos para despertarse
+	Al proceso 2 le quedan 88 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 87 ciclos para despertarse
+	Al proceso 2 le quedan 87 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 86 ciclos para despertarse
+	Al proceso 2 le quedan 86 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 85 ciclos para despertarse
+	Al proceso 2 le quedan 85 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 84 ciclos para despertarse
+	Al proceso 2 le quedan 84 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 83 ciclos para despertarse
+	Al proceso 2 le quedan 83 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 82 ciclos para despertarse
+	Al proceso 2 le quedan 82 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 81 ciclos para despertarse
+	Al proceso 2 le quedan 81 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 80 ciclos para despertarse
+	Al proceso 2 le quedan 80 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 79 ciclos para despertarse
+	Al proceso 2 le quedan 79 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 78 ciclos para despertarse
+	Al proceso 2 le quedan 78 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 77 ciclos para despertarse
+	Al proceso 2 le quedan 77 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 76 ciclos para despertarse
+	Al proceso 2 le quedan 76 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 75 ciclos para despertarse
+	Al proceso 2 le quedan 75 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 74 ciclos para despertarse
+	Al proceso 2 le quedan 74 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 73 ciclos para despertarse
+	Al proceso 2 le quedan 73 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 72 ciclos para despertarse
+	Al proceso 2 le quedan 72 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 71 ciclos para despertarse
+	Al proceso 2 le quedan 71 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 70 ciclos para despertarse
+	Al proceso 2 le quedan 70 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 69 ciclos para despertarse
+	Al proceso 2 le quedan 69 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 68 ciclos para despertarse
+	Al proceso 2 le quedan 68 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 67 ciclos para despertarse
+	Al proceso 2 le quedan 67 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 66 ciclos para despertarse
+	Al proceso 2 le quedan 66 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 65 ciclos para despertarse
+	Al proceso 2 le quedan 65 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 64 ciclos para despertarse
+	Al proceso 2 le quedan 64 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 63 ciclos para despertarse
+	Al proceso 2 le quedan 63 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 62 ciclos para despertarse
+	Al proceso 2 le quedan 62 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 61 ciclos para despertarse
+	Al proceso 2 le quedan 61 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 60 ciclos para despertarse
+	Al proceso 2 le quedan 60 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 59 ciclos para despertarse
+	Al proceso 2 le quedan 59 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 58 ciclos para despertarse
+	Al proceso 2 le quedan 58 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 57 ciclos para despertarse
+	Al proceso 2 le quedan 57 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 56 ciclos para despertarse
+	Al proceso 2 le quedan 56 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 55 ciclos para despertarse
+	Al proceso 2 le quedan 55 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 54 ciclos para despertarse
+	Al proceso 2 le quedan 54 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 53 ciclos para despertarse
+	Al proceso 2 le quedan 53 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 52 ciclos para despertarse
+	Al proceso 2 le quedan 52 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 51 ciclos para despertarse
+	Al proceso 2 le quedan 51 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 50 ciclos para despertarse
+	Al proceso 2 le quedan 50 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 49 ciclos para despertarse
+	Al proceso 2 le quedan 49 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 48 ciclos para despertarse
+	Al proceso 2 le quedan 48 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 47 ciclos para despertarse
+	Al proceso 2 le quedan 47 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 46 ciclos para despertarse
+	Al proceso 2 le quedan 46 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 45 ciclos para despertarse
+	Al proceso 2 le quedan 45 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 44 ciclos para despertarse
+	Al proceso 2 le quedan 44 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 43 ciclos para despertarse
+	Al proceso 2 le quedan 43 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 42 ciclos para despertarse
+	Al proceso 2 le quedan 42 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 41 ciclos para despertarse
+	Al proceso 2 le quedan 41 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 40 ciclos para despertarse
+	Al proceso 2 le quedan 40 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 39 ciclos para despertarse
+	Al proceso 2 le quedan 39 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 38 ciclos para despertarse
+	Al proceso 2 le quedan 38 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 37 ciclos para despertarse
+	Al proceso 2 le quedan 37 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 36 ciclos para despertarse
+	Al proceso 2 le quedan 36 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 35 ciclos para despertarse
+	Al proceso 2 le quedan 35 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 34 ciclos para despertarse
+	Al proceso 2 le quedan 34 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 33 ciclos para despertarse
+	Al proceso 2 le quedan 33 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 32 ciclos para despertarse
+	Al proceso 2 le quedan 32 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 31 ciclos para despertarse
+	Al proceso 2 le quedan 31 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 30 ciclos para despertarse
+	Al proceso 2 le quedan 30 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 29 ciclos para despertarse
+	Al proceso 2 le quedan 29 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 28 ciclos para despertarse
+	Al proceso 2 le quedan 28 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 27 ciclos para despertarse
+	Al proceso 2 le quedan 27 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 26 ciclos para despertarse
+	Al proceso 2 le quedan 26 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 25 ciclos para despertarse
+	Al proceso 2 le quedan 25 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 24 ciclos para despertarse
+	Al proceso 2 le quedan 24 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 23 ciclos para despertarse
+	Al proceso 2 le quedan 23 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 22 ciclos para despertarse
+	Al proceso 2 le quedan 22 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 21 ciclos para despertarse
+	Al proceso 2 le quedan 21 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 20 ciclos para despertarse
+	Al proceso 2 le quedan 20 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 19 ciclos para despertarse
+	Al proceso 2 le quedan 19 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 18 ciclos para despertarse
+	Al proceso 2 le quedan 18 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 17 ciclos para despertarse
+	Al proceso 2 le quedan 17 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 16 ciclos para despertarse
+	Al proceso 2 le quedan 16 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 15 ciclos para despertarse
+	Al proceso 2 le quedan 15 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 14 ciclos para despertarse
+	Al proceso 2 le quedan 14 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 13 ciclos para despertarse
+	Al proceso 2 le quedan 13 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 12 ciclos para despertarse
+	Al proceso 2 le quedan 12 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 11 ciclos para despertarse
+	Al proceso 2 le quedan 11 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 10 ciclos para despertarse
+	Al proceso 2 le quedan 10 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 9 ciclos para despertarse
+	Al proceso 2 le quedan 9 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 8 ciclos para despertarse
+	Al proceso 2 le quedan 8 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 7 ciclos para despertarse
+	Al proceso 2 le quedan 7 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 6 ciclos para despertarse
+	Al proceso 2 le quedan 6 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 5 ciclos para despertarse
+	Al proceso 2 le quedan 5 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 4 ciclos para despertarse
+	Al proceso 2 le quedan 4 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 3 ciclos para despertarse
+	Al proceso 2 le quedan 3 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 2 ciclos para despertarse
+	Al proceso 2 le quedan 2 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 1 ciclos para despertarse
+	Al proceso 2 le quedan 1 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 0 ciclos para despertarse
+	El proceso 0 se ha despertado
+	Al proceso 2 le quedan 0 ciclos para despertarse
+	El proceso 2 se ha despertado
+
+[TRATAR_LLAMSIS] dormilon (0) duerme 1 segundos
+
+[TRATAR_LLAMSIS] 
+[SIS_DORMIR]
+	Argumentos. Segundos: 1 	Ciclos: 100
+	Se pone a dormir el proceso 0
+
+[TRATAR_LLAMSIS] dormilon (2) duerme 3 segundos
+
+[TRATAR_LLAMSIS] 
+[SIS_DORMIR]
+	Argumentos. Segundos: 3 	Ciclos: 300
+	Se pone a dormir el proceso 2
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 100 ciclos para despertarse
+	Al proceso 2 le quedan 300 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 99 ciclos para despertarse
+	Al proceso 2 le quedan 299 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 98 ciclos para despertarse
+	Al proceso 2 le quedan 298 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 97 ciclos para despertarse
+	Al proceso 2 le quedan 297 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 96 ciclos para despertarse
+	Al proceso 2 le quedan 296 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 95 ciclos para despertarse
+	Al proceso 2 le quedan 295 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 94 ciclos para despertarse
+	Al proceso 2 le quedan 294 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 93 ciclos para despertarse
+	Al proceso 2 le quedan 293 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 92 ciclos para despertarse
+	Al proceso 2 le quedan 292 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 91 ciclos para despertarse
+	Al proceso 2 le quedan 291 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 90 ciclos para despertarse
+	Al proceso 2 le quedan 290 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 89 ciclos para despertarse
+	Al proceso 2 le quedan 289 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 88 ciclos para despertarse
+	Al proceso 2 le quedan 288 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 87 ciclos para despertarse
+	Al proceso 2 le quedan 287 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 86 ciclos para despertarse
+	Al proceso 2 le quedan 286 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 85 ciclos para despertarse
+	Al proceso 2 le quedan 285 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 84 ciclos para despertarse
+	Al proceso 2 le quedan 284 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 83 ciclos para despertarse
+	Al proceso 2 le quedan 283 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 82 ciclos para despertarse
+	Al proceso 2 le quedan 282 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 81 ciclos para despertarse
+	Al proceso 2 le quedan 281 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 80 ciclos para despertarse
+	Al proceso 2 le quedan 280 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 79 ciclos para despertarse
+	Al proceso 2 le quedan 279 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 78 ciclos para despertarse
+	Al proceso 2 le quedan 278 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 77 ciclos para despertarse
+	Al proceso 2 le quedan 277 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 76 ciclos para despertarse
+	Al proceso 2 le quedan 276 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 75 ciclos para despertarse
+	Al proceso 2 le quedan 275 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 74 ciclos para despertarse
+	Al proceso 2 le quedan 274 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 73 ciclos para despertarse
+	Al proceso 2 le quedan 273 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 72 ciclos para despertarse
+	Al proceso 2 le quedan 272 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 71 ciclos para despertarse
+	Al proceso 2 le quedan 271 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 70 ciclos para despertarse
+	Al proceso 2 le quedan 270 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 69 ciclos para despertarse
+	Al proceso 2 le quedan 269 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 68 ciclos para despertarse
+	Al proceso 2 le quedan 268 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 67 ciclos para despertarse
+	Al proceso 2 le quedan 267 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 66 ciclos para despertarse
+	Al proceso 2 le quedan 266 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 65 ciclos para despertarse
+	Al proceso 2 le quedan 265 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 64 ciclos para despertarse
+	Al proceso 2 le quedan 264 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 63 ciclos para despertarse
+	Al proceso 2 le quedan 263 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 62 ciclos para despertarse
+	Al proceso 2 le quedan 262 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 61 ciclos para despertarse
+	Al proceso 2 le quedan 261 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 60 ciclos para despertarse
+	Al proceso 2 le quedan 260 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 59 ciclos para despertarse
+	Al proceso 2 le quedan 259 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 58 ciclos para despertarse
+	Al proceso 2 le quedan 258 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 57 ciclos para despertarse
+	Al proceso 2 le quedan 257 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 56 ciclos para despertarse
+	Al proceso 2 le quedan 256 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 55 ciclos para despertarse
+	Al proceso 2 le quedan 255 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 54 ciclos para despertarse
+	Al proceso 2 le quedan 254 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 53 ciclos para despertarse
+	Al proceso 2 le quedan 253 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 52 ciclos para despertarse
+	Al proceso 2 le quedan 252 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 51 ciclos para despertarse
+	Al proceso 2 le quedan 251 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 50 ciclos para despertarse
+	Al proceso 2 le quedan 250 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 49 ciclos para despertarse
+	Al proceso 2 le quedan 249 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 48 ciclos para despertarse
+	Al proceso 2 le quedan 248 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 47 ciclos para despertarse
+	Al proceso 2 le quedan 247 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 46 ciclos para despertarse
+	Al proceso 2 le quedan 246 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 45 ciclos para despertarse
+	Al proceso 2 le quedan 245 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 44 ciclos para despertarse
+	Al proceso 2 le quedan 244 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 43 ciclos para despertarse
+	Al proceso 2 le quedan 243 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 42 ciclos para despertarse
+	Al proceso 2 le quedan 242 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 41 ciclos para despertarse
+	Al proceso 2 le quedan 241 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 40 ciclos para despertarse
+	Al proceso 2 le quedan 240 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 39 ciclos para despertarse
+	Al proceso 2 le quedan 239 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 38 ciclos para despertarse
+	Al proceso 2 le quedan 238 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 37 ciclos para despertarse
+	Al proceso 2 le quedan 237 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 36 ciclos para despertarse
+	Al proceso 2 le quedan 236 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 35 ciclos para despertarse
+	Al proceso 2 le quedan 235 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 34 ciclos para despertarse
+	Al proceso 2 le quedan 234 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 33 ciclos para despertarse
+	Al proceso 2 le quedan 233 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 32 ciclos para despertarse
+	Al proceso 2 le quedan 232 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 31 ciclos para despertarse
+	Al proceso 2 le quedan 231 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 30 ciclos para despertarse
+	Al proceso 2 le quedan 230 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 29 ciclos para despertarse
+	Al proceso 2 le quedan 229 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 28 ciclos para despertarse
+	Al proceso 2 le quedan 228 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 27 ciclos para despertarse
+	Al proceso 2 le quedan 227 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 26 ciclos para despertarse
+	Al proceso 2 le quedan 226 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 25 ciclos para despertarse
+	Al proceso 2 le quedan 225 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 24 ciclos para despertarse
+	Al proceso 2 le quedan 224 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 23 ciclos para despertarse
+	Al proceso 2 le quedan 223 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 22 ciclos para despertarse
+	Al proceso 2 le quedan 222 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 21 ciclos para despertarse
+	Al proceso 2 le quedan 221 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 20 ciclos para despertarse
+	Al proceso 2 le quedan 220 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 19 ciclos para despertarse
+	Al proceso 2 le quedan 219 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 18 ciclos para despertarse
+	Al proceso 2 le quedan 218 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 17 ciclos para despertarse
+	Al proceso 2 le quedan 217 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 16 ciclos para despertarse
+	Al proceso 2 le quedan 216 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 15 ciclos para despertarse
+	Al proceso 2 le quedan 215 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 14 ciclos para despertarse
+	Al proceso 2 le quedan 214 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 13 ciclos para despertarse
+	Al proceso 2 le quedan 213 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 12 ciclos para despertarse
+	Al proceso 2 le quedan 212 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 11 ciclos para despertarse
+	Al proceso 2 le quedan 211 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 10 ciclos para despertarse
+	Al proceso 2 le quedan 210 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 9 ciclos para despertarse
+	Al proceso 2 le quedan 209 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 8 ciclos para despertarse
+	Al proceso 2 le quedan 208 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 7 ciclos para despertarse
+	Al proceso 2 le quedan 207 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 6 ciclos para despertarse
+	Al proceso 2 le quedan 206 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 5 ciclos para despertarse
+	Al proceso 2 le quedan 205 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 4 ciclos para despertarse
+	Al proceso 2 le quedan 204 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 3 ciclos para despertarse
+	Al proceso 2 le quedan 203 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 2 ciclos para despertarse
+	Al proceso 2 le quedan 202 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 1 ciclos para despertarse
+	Al proceso 2 le quedan 201 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 0 le quedan 0 ciclos para despertarse
+	El proceso 0 se ha despertado
+	Al proceso 2 le quedan 200 ciclos para despertarse
+
+[TRATAR_LLAMSIS] dormilon (0): termina
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 0
+
+[LIBERAR_PROCESO]
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 199 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 198 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 197 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 196 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 195 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 194 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 193 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 192 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 191 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 190 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 189 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 188 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 187 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 186 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 185 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 184 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 183 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 182 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 181 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 180 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 179 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 178 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 177 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 176 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 175 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 174 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 173 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 172 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 171 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 170 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 169 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 168 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 167 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 166 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 165 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 164 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 163 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 162 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 161 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 160 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 159 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 158 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 157 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 156 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 155 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 154 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 153 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 152 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 151 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 150 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 149 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 148 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 147 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 146 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 145 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 144 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 143 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 142 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 141 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 140 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 139 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 138 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 137 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 136 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 135 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 134 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 133 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 132 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 131 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 130 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 129 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 128 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 127 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 126 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 125 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 124 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 123 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 122 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 121 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 120 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 119 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 118 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 117 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 116 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 115 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 114 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 113 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 112 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 111 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 110 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 109 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 108 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 107 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 106 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 105 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 104 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 103 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 102 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 101 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 100 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 99 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 98 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 97 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 96 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 95 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 94 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 93 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 92 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 91 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 90 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 89 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 88 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 87 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 86 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 85 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 84 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 83 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 82 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 81 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 80 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 79 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 78 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 77 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 76 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 75 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 74 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 73 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 72 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 71 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 70 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 69 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 68 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 67 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 66 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 65 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 64 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 63 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 62 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 61 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 60 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 59 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 58 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 57 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 56 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 55 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 54 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 53 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 52 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 51 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 50 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 49 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 48 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 47 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 46 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 45 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 44 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 43 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 42 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 41 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 40 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 39 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 38 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 37 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 36 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 35 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 34 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 33 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 32 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 31 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 30 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 29 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 28 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 27 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 26 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 25 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 24 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 23 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 22 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 21 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 20 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 19 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 18 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 17 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 16 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 15 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 14 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 13 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 12 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 11 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 10 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 9 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 8 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 7 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 6 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 5 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 4 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 3 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 2 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 1 ciclos para despertarse
+
+[ESPERA_INT]
+	No hay procesos en la cola de procesos listos. Esperando una interrupcion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Procesando procesos bloqueados por [SIS_DORMIR]
+	Al proceso 2 le quedan 0 ciclos para despertarse
+	El proceso 2 se ha despertado
+	El proceso 0 ha finalizado su ejecucion. Cambio de contexto al proceso 2
+
+[TRATAR_LLAMSIS] dormilon (2): termina
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 2
+
+[LIBERAR_PROCESO]

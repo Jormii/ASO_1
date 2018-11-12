@@ -1,0 +1,231 @@
+
+[TRATAR_LLAMSIS] init: comienza
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 0 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] init: termina
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 0
+
+[LIBERAR_PROCESO]
+	El proceso 0 ha finalizado su ejecucion. Cambio de contexto al proceso 1
+
+[TRATAR_LLAMSIS] prueba_RR2: comienza
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 1 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 1 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 1 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 1 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 1 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] prueba_RR2: termina
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 1
+
+[LIBERAR_PROCESO]
+	El proceso 1 ha finalizado su ejecucion. Cambio de contexto al proceso 0
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 0 le restan 3 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 0 le restan 2 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 0 le restan 1 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 0 le restan 0 ciclos en ejecucion
+
+[INT_SW]
+	Tratando interrupcion software
+	El round robin va a expulsar el proceso 0
+	Entra a ejecutarse el proceso 2
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 2 le restan 3 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 2 le restan 2 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 2 le restan 1 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 2 le restan 0 ciclos en ejecucion
+
+[INT_SW]
+	Tratando interrupcion software
+	El round robin va a expulsar el proceso 2
+	Entra a ejecutarse el proceso 3
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 3 le restan 3 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 3 le restan 2 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 3 le restan 1 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 3 le restan 0 ciclos en ejecucion
+
+[INT_SW]
+	Tratando interrupcion software
+	El round robin va a expulsar el proceso 3
+	Entra a ejecutarse el proceso 4
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 4 le restan 3 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 4 le restan 2 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 4 le restan 1 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 4 le restan 0 ciclos en ejecucion
+
+[INT_SW]
+	Tratando interrupcion software
+	El round robin va a expulsar el proceso 4
+	Entra a ejecutarse el proceso 5
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 5 le restan 3 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 5 le restan 2 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 5 le restan 1 ciclos en ejecucion
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 5 le restan 0 ciclos en ejecucion
+
+[INT_SW]
+	Tratando interrupcion software
+	El round robin va a expulsar el proceso 5
+	Entra a ejecutarse el proceso 0
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 0 le restan 2 ciclos en ejecucion
+
+[TRATAR_LLAMSIS] 
+[SIS_OBTENER_ID_PR]
+	ID del proceso actual: 0
+
+[TRATAR_LLAMSIS] mudo (0): termina con 99999995
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 0
+
+[LIBERAR_PROCESO]
+	El proceso 0 ha finalizado su ejecucion. Cambio de contexto al proceso 2
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 2 le restan 2 ciclos en ejecucion
+
+[TRATAR_LLAMSIS] 
+[SIS_OBTENER_ID_PR]
+	ID del proceso actual: 2
+
+[TRATAR_LLAMSIS] mudo (2): termina con 99999995
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 2
+
+[LIBERAR_PROCESO]
+	El proceso 2 ha finalizado su ejecucion. Cambio de contexto al proceso 3
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 3 le restan 2 ciclos en ejecucion
+
+[TRATAR_LLAMSIS] 
+[SIS_OBTENER_ID_PR]
+	ID del proceso actual: 3
+
+[TRATAR_LLAMSIS] mudo (3): termina con 99999995
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 3
+
+[LIBERAR_PROCESO]
+	El proceso 3 ha finalizado su ejecucion. Cambio de contexto al proceso 4
+
+[INT_RELOJ]
+	Tratando interrupcion de reloj
+	Al proceso 4 le restan 2 ciclos en ejecucion
+
+[TRATAR_LLAMSIS] 
+[SIS_OBTENER_ID_PR]
+	ID del proceso actual: 4
+
+[TRATAR_LLAMSIS] mudo (4): termina con 99999995
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 4
+
+[LIBERAR_PROCESO]
+	El proceso 4 ha finalizado su ejecucion. Cambio de contexto al proceso 5
+
+[TRATAR_LLAMSIS] 
+[SIS_OBTENER_ID_PR]
+	ID del proceso actual: 5
+
+[TRATAR_LLAMSIS] mudo (5): termina con 99999995
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 5
+
+[LIBERAR_PROCESO]

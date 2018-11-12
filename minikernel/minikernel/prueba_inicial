@@ -1,0 +1,946 @@
+
+[TRATAR_LLAMSIS] init: comienza
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 0 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 0 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 0 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 0 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] Error creando noexiste
+
+[TRATAR_LLAMSIS] init: termina
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 0
+
+[LIBERAR_PROCESO]
+	El proceso 0 ha finalizado su ejecucion. Cambio de contexto al proceso 1
+
+[TRATAR_LLAMSIS] simplon: i 0
+
+[TRATAR_LLAMSIS] simplon: i 1
+
+[TRATAR_LLAMSIS] simplon: i 2
+
+[TRATAR_LLAMSIS] simplon: i 3
+
+[TRATAR_LLAMSIS] simplon: i 4
+
+[TRATAR_LLAMSIS] simplon: i 5
+
+[TRATAR_LLAMSIS] simplon: i 6
+
+[TRATAR_LLAMSIS] simplon: i 7
+
+[TRATAR_LLAMSIS] simplon: i 8
+
+[TRATAR_LLAMSIS] simplon: i 9
+
+[TRATAR_LLAMSIS] simplon: i 10
+
+[TRATAR_LLAMSIS] simplon: i 11
+
+[TRATAR_LLAMSIS] simplon: i 12
+
+[TRATAR_LLAMSIS] simplon: i 13
+
+[TRATAR_LLAMSIS] simplon: i 14
+
+[TRATAR_LLAMSIS] simplon: i 15
+
+[TRATAR_LLAMSIS] simplon: i 16
+
+[TRATAR_LLAMSIS] simplon: i 17
+
+[TRATAR_LLAMSIS] simplon: i 18
+
+[TRATAR_LLAMSIS] simplon: i 19
+
+[TRATAR_LLAMSIS] simplon: i 20
+
+[TRATAR_LLAMSIS] simplon: i 21
+
+[TRATAR_LLAMSIS] simplon: i 22
+
+[TRATAR_LLAMSIS] simplon: i 23
+
+[TRATAR_LLAMSIS] simplon: i 24
+
+[TRATAR_LLAMSIS] simplon: i 25
+
+[TRATAR_LLAMSIS] simplon: i 26
+
+[TRATAR_LLAMSIS] simplon: i 27
+
+[TRATAR_LLAMSIS] simplon: i 28
+
+[TRATAR_LLAMSIS] simplon: i 29
+
+[TRATAR_LLAMSIS] simplon: i 30
+
+[TRATAR_LLAMSIS] simplon: i 31
+
+[TRATAR_LLAMSIS] simplon: i 32
+
+[TRATAR_LLAMSIS] simplon: i 33
+
+[TRATAR_LLAMSIS] simplon: i 34
+
+[TRATAR_LLAMSIS] simplon: i 35
+
+[TRATAR_LLAMSIS] simplon: i 36
+
+[TRATAR_LLAMSIS] simplon: i 37
+
+[TRATAR_LLAMSIS] simplon: i 38
+
+[TRATAR_LLAMSIS] simplon: i 39
+
+[TRATAR_LLAMSIS] simplon: i 40
+
+[TRATAR_LLAMSIS] simplon: i 41
+
+[TRATAR_LLAMSIS] simplon: i 42
+
+[TRATAR_LLAMSIS] simplon: i 43
+
+[TRATAR_LLAMSIS] simplon: i 44
+
+[TRATAR_LLAMSIS] simplon: i 45
+
+[TRATAR_LLAMSIS] simplon: i 46
+
+[TRATAR_LLAMSIS] simplon: i 47
+
+[TRATAR_LLAMSIS] simplon: i 48
+
+[TRATAR_LLAMSIS] simplon: i 49
+
+[TRATAR_LLAMSIS] simplon: i 50
+
+[TRATAR_LLAMSIS] simplon: i 51
+
+[TRATAR_LLAMSIS] simplon: i 52
+
+[TRATAR_LLAMSIS] simplon: i 53
+
+[TRATAR_LLAMSIS] simplon: i 54
+
+[TRATAR_LLAMSIS] simplon: i 55
+
+[TRATAR_LLAMSIS] simplon: i 56
+
+[TRATAR_LLAMSIS] simplon: i 57
+
+[TRATAR_LLAMSIS] simplon: i 58
+
+[TRATAR_LLAMSIS] simplon: i 59
+
+[TRATAR_LLAMSIS] simplon: i 60
+
+[TRATAR_LLAMSIS] simplon: i 61
+
+[TRATAR_LLAMSIS] simplon: i 62
+
+[TRATAR_LLAMSIS] simplon: i 63
+
+[TRATAR_LLAMSIS] simplon: i 64
+
+[TRATAR_LLAMSIS] simplon: i 65
+
+[TRATAR_LLAMSIS] simplon: i 66
+
+[TRATAR_LLAMSIS] simplon: i 67
+
+[TRATAR_LLAMSIS] simplon: i 68
+
+[TRATAR_LLAMSIS] simplon: i 69
+
+[TRATAR_LLAMSIS] simplon: i 70
+
+[TRATAR_LLAMSIS] simplon: i 71
+
+[TRATAR_LLAMSIS] simplon: i 72
+
+[TRATAR_LLAMSIS] simplon: i 73
+
+[TRATAR_LLAMSIS] simplon: i 74
+
+[TRATAR_LLAMSIS] simplon: i 75
+
+[TRATAR_LLAMSIS] simplon: i 76
+
+[TRATAR_LLAMSIS] simplon: i 77
+
+[TRATAR_LLAMSIS] simplon: i 78
+
+[TRATAR_LLAMSIS] simplon: i 79
+
+[TRATAR_LLAMSIS] simplon: i 80
+
+[TRATAR_LLAMSIS] simplon: i 81
+
+[TRATAR_LLAMSIS] simplon: i 82
+
+[TRATAR_LLAMSIS] simplon: i 83
+
+[TRATAR_LLAMSIS] simplon: i 84
+
+[TRATAR_LLAMSIS] simplon: i 85
+
+[TRATAR_LLAMSIS] simplon: i 86
+
+[TRATAR_LLAMSIS] simplon: i 87
+
+[TRATAR_LLAMSIS] simplon: i 88
+
+[TRATAR_LLAMSIS] simplon: i 89
+
+[TRATAR_LLAMSIS] simplon: i 90
+
+[TRATAR_LLAMSIS] simplon: i 91
+
+[TRATAR_LLAMSIS] simplon: i 92
+
+[TRATAR_LLAMSIS] simplon: i 93
+
+[TRATAR_LLAMSIS] simplon: i 94
+
+[TRATAR_LLAMSIS] simplon: i 95
+
+[TRATAR_LLAMSIS] simplon: i 96
+
+[TRATAR_LLAMSIS] simplon: i 97
+
+[TRATAR_LLAMSIS] simplon: i 98
+
+[TRATAR_LLAMSIS] simplon: i 99
+
+[TRATAR_LLAMSIS] simplon: i 100
+
+[TRATAR_LLAMSIS] simplon: i 101
+
+[TRATAR_LLAMSIS] simplon: i 102
+
+[TRATAR_LLAMSIS] simplon: i 103
+
+[TRATAR_LLAMSIS] simplon: i 104
+
+[TRATAR_LLAMSIS] simplon: i 105
+
+[TRATAR_LLAMSIS] simplon: i 106
+
+[TRATAR_LLAMSIS] simplon: i 107
+
+[TRATAR_LLAMSIS] simplon: i 108
+
+[TRATAR_LLAMSIS] simplon: i 109
+
+[TRATAR_LLAMSIS] simplon: i 110
+
+[TRATAR_LLAMSIS] simplon: i 111
+
+[TRATAR_LLAMSIS] simplon: i 112
+
+[TRATAR_LLAMSIS] simplon: i 113
+
+[TRATAR_LLAMSIS] simplon: i 114
+
+[TRATAR_LLAMSIS] simplon: i 115
+
+[TRATAR_LLAMSIS] simplon: i 116
+
+[TRATAR_LLAMSIS] simplon: i 117
+
+[TRATAR_LLAMSIS] simplon: i 118
+
+[TRATAR_LLAMSIS] simplon: i 119
+
+[TRATAR_LLAMSIS] simplon: i 120
+
+[TRATAR_LLAMSIS] simplon: i 121
+
+[TRATAR_LLAMSIS] simplon: i 122
+
+[TRATAR_LLAMSIS] simplon: i 123
+
+[TRATAR_LLAMSIS] simplon: i 124
+
+[TRATAR_LLAMSIS] simplon: i 125
+
+[TRATAR_LLAMSIS] simplon: i 126
+
+[TRATAR_LLAMSIS] simplon: i 127
+
+[TRATAR_LLAMSIS] simplon: i 128
+
+[TRATAR_LLAMSIS] simplon: i 129
+
+[TRATAR_LLAMSIS] simplon: i 130
+
+[TRATAR_LLAMSIS] simplon: i 131
+
+[TRATAR_LLAMSIS] simplon: i 132
+
+[TRATAR_LLAMSIS] simplon: i 133
+
+[TRATAR_LLAMSIS] simplon: i 134
+
+[TRATAR_LLAMSIS] simplon: i 135
+
+[TRATAR_LLAMSIS] simplon: i 136
+
+[TRATAR_LLAMSIS] simplon: i 137
+
+[TRATAR_LLAMSIS] simplon: i 138
+
+[TRATAR_LLAMSIS] simplon: i 139
+
+[TRATAR_LLAMSIS] simplon: i 140
+
+[TRATAR_LLAMSIS] simplon: i 141
+
+[TRATAR_LLAMSIS] simplon: i 142
+
+[TRATAR_LLAMSIS] simplon: i 143
+
+[TRATAR_LLAMSIS] simplon: i 144
+
+[TRATAR_LLAMSIS] simplon: i 145
+
+[TRATAR_LLAMSIS] simplon: i 146
+
+[TRATAR_LLAMSIS] simplon: i 147
+
+[TRATAR_LLAMSIS] simplon: i 148
+
+[TRATAR_LLAMSIS] simplon: i 149
+
+[TRATAR_LLAMSIS] simplon: i 150
+
+[TRATAR_LLAMSIS] simplon: i 151
+
+[TRATAR_LLAMSIS] simplon: i 152
+
+[TRATAR_LLAMSIS] simplon: i 153
+
+[TRATAR_LLAMSIS] simplon: i 154
+
+[TRATAR_LLAMSIS] simplon: i 155
+
+[TRATAR_LLAMSIS] simplon: i 156
+
+[TRATAR_LLAMSIS] simplon: i 157
+
+[TRATAR_LLAMSIS] simplon: i 158
+
+[TRATAR_LLAMSIS] simplon: i 159
+
+[TRATAR_LLAMSIS] simplon: i 160
+
+[TRATAR_LLAMSIS] simplon: i 161
+
+[TRATAR_LLAMSIS] simplon: i 162
+
+[TRATAR_LLAMSIS] simplon: i 163
+
+[TRATAR_LLAMSIS] simplon: i 164
+
+[TRATAR_LLAMSIS] simplon: i 165
+
+[TRATAR_LLAMSIS] simplon: i 166
+
+[TRATAR_LLAMSIS] simplon: i 167
+
+[TRATAR_LLAMSIS] simplon: i 168
+
+[TRATAR_LLAMSIS] simplon: i 169
+
+[TRATAR_LLAMSIS] simplon: i 170
+
+[TRATAR_LLAMSIS] simplon: i 171
+
+[TRATAR_LLAMSIS] simplon: i 172
+
+[TRATAR_LLAMSIS] simplon: i 173
+
+[TRATAR_LLAMSIS] simplon: i 174
+
+[TRATAR_LLAMSIS] simplon: i 175
+
+[TRATAR_LLAMSIS] simplon: i 176
+
+[TRATAR_LLAMSIS] simplon: i 177
+
+[TRATAR_LLAMSIS] simplon: i 178
+
+[TRATAR_LLAMSIS] simplon: i 179
+
+[TRATAR_LLAMSIS] simplon: i 180
+
+[TRATAR_LLAMSIS] simplon: i 181
+
+[TRATAR_LLAMSIS] simplon: i 182
+
+[TRATAR_LLAMSIS] simplon: i 183
+
+[TRATAR_LLAMSIS] simplon: i 184
+
+[TRATAR_LLAMSIS] simplon: i 185
+
+[TRATAR_LLAMSIS] simplon: i 186
+
+[TRATAR_LLAMSIS] simplon: i 187
+
+[TRATAR_LLAMSIS] simplon: i 188
+
+[TRATAR_LLAMSIS] simplon: i 189
+
+[TRATAR_LLAMSIS] simplon: i 190
+
+[TRATAR_LLAMSIS] simplon: i 191
+
+[TRATAR_LLAMSIS] simplon: i 192
+
+[TRATAR_LLAMSIS] simplon: i 193
+
+[TRATAR_LLAMSIS] simplon: i 194
+
+[TRATAR_LLAMSIS] simplon: i 195
+
+[TRATAR_LLAMSIS] simplon: i 196
+
+[TRATAR_LLAMSIS] simplon: i 197
+
+[TRATAR_LLAMSIS] simplon: i 198
+
+[TRATAR_LLAMSIS] simplon: i 199
+
+[TRATAR_LLAMSIS] simplon: termina
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 1
+
+[LIBERAR_PROCESO]
+	El proceso 1 ha finalizado su ejecucion. Cambio de contexto al proceso 2
+
+[TRATAR_LLAMSIS] excep_arit: i 0 
+
+[TRATAR_LLAMSIS] excep_arit: i 1 
+
+[TRATAR_LLAMSIS] excep_arit: i 2 
+
+[TRATAR_LLAMSIS] excep_arit: i 3 
+
+[TRATAR_LLAMSIS] excep_arit: i 4 
+
+[TRATAR_LLAMSIS] excep_arit: i 5 
+
+[TRATAR_LLAMSIS] excep_arit: i 6 
+
+[TRATAR_LLAMSIS] excep_arit: i 7 
+
+[TRATAR_LLAMSIS] excep_arit: i 8 
+
+[TRATAR_LLAMSIS] excep_arit: i 9 
+
+[TRATAR_LLAMSIS] excep_arit: i 10 
+
+[TRATAR_LLAMSIS] excep_arit: i 11 
+
+[TRATAR_LLAMSIS] excep_arit: i 12 
+
+[TRATAR_LLAMSIS] excep_arit: i 13 
+
+[TRATAR_LLAMSIS] excep_arit: i 14 
+
+[TRATAR_LLAMSIS] excep_arit: i 15 
+
+[TRATAR_LLAMSIS] excep_arit: i 16 
+
+[TRATAR_LLAMSIS] excep_arit: i 17 
+
+[TRATAR_LLAMSIS] excep_arit: i 18 
+
+[TRATAR_LLAMSIS] excep_arit: i 19 
+
+[TRATAR_LLAMSIS] excep_arit: i 20 
+
+[TRATAR_LLAMSIS] excep_arit: i 21 
+
+[EXC_ARIT]
+	Excepcion aritmetica producida por el proceso 2
+
+[LIBERAR_PROCESO]
+	El proceso 2 ha finalizado su ejecucion. Cambio de contexto al proceso 3
+
+[TRATAR_LLAMSIS] 
+[SIS_CREAR_PROCESO]
+	El proceso 3 esta creando un nuevo proceso
+
+[TRATAR_LLAMSIS] excep_mem: i 0
+
+[TRATAR_LLAMSIS] excep_mem: i 1
+
+[TRATAR_LLAMSIS] excep_mem: i 2
+
+[TRATAR_LLAMSIS] excep_mem: i 3
+
+[TRATAR_LLAMSIS] excep_mem: i 4
+
+[TRATAR_LLAMSIS] excep_mem: i 5
+
+[TRATAR_LLAMSIS] excep_mem: i 6
+
+[TRATAR_LLAMSIS] excep_mem: i 7
+
+[TRATAR_LLAMSIS] excep_mem: i 8
+
+[TRATAR_LLAMSIS] excep_mem: i 9
+
+[TRATAR_LLAMSIS] excep_mem: i 10
+
+[TRATAR_LLAMSIS] excep_mem: i 11
+
+[TRATAR_LLAMSIS] excep_mem: i 12
+
+[TRATAR_LLAMSIS] excep_mem: i 13
+
+[TRATAR_LLAMSIS] excep_mem: i 14
+
+[TRATAR_LLAMSIS] excep_mem: i 15
+
+[TRATAR_LLAMSIS] excep_mem: i 16
+
+[TRATAR_LLAMSIS] excep_mem: i 17
+
+[TRATAR_LLAMSIS] excep_mem: i 18
+
+[TRATAR_LLAMSIS] excep_mem: i 19
+
+[EXC_MEM]
+	Excepcion de memoria producida por el proceso 3
+
+[LIBERAR_PROCESO]
+	El proceso 3 ha finalizado su ejecucion. Cambio de contexto al proceso 0
+
+[TRATAR_LLAMSIS] simplon: i 0
+
+[TRATAR_LLAMSIS] simplon: i 1
+
+[TRATAR_LLAMSIS] simplon: i 2
+
+[TRATAR_LLAMSIS] simplon: i 3
+
+[TRATAR_LLAMSIS] simplon: i 4
+
+[TRATAR_LLAMSIS] simplon: i 5
+
+[TRATAR_LLAMSIS] simplon: i 6
+
+[TRATAR_LLAMSIS] simplon: i 7
+
+[TRATAR_LLAMSIS] simplon: i 8
+
+[TRATAR_LLAMSIS] simplon: i 9
+
+[TRATAR_LLAMSIS] simplon: i 10
+
+[TRATAR_LLAMSIS] simplon: i 11
+
+[TRATAR_LLAMSIS] simplon: i 12
+
+[TRATAR_LLAMSIS] simplon: i 13
+
+[TRATAR_LLAMSIS] simplon: i 14
+
+[TRATAR_LLAMSIS] simplon: i 15
+
+[TRATAR_LLAMSIS] simplon: i 16
+
+[TRATAR_LLAMSIS] simplon: i 17
+
+[TRATAR_LLAMSIS] simplon: i 18
+
+[TRATAR_LLAMSIS] simplon: i 19
+
+[TRATAR_LLAMSIS] simplon: i 20
+
+[TRATAR_LLAMSIS] simplon: i 21
+
+[TRATAR_LLAMSIS] simplon: i 22
+
+[TRATAR_LLAMSIS] simplon: i 23
+
+[TRATAR_LLAMSIS] simplon: i 24
+
+[TRATAR_LLAMSIS] simplon: i 25
+
+[TRATAR_LLAMSIS] simplon: i 26
+
+[TRATAR_LLAMSIS] simplon: i 27
+
+[TRATAR_LLAMSIS] simplon: i 28
+
+[TRATAR_LLAMSIS] simplon: i 29
+
+[TRATAR_LLAMSIS] simplon: i 30
+
+[TRATAR_LLAMSIS] simplon: i 31
+
+[TRATAR_LLAMSIS] simplon: i 32
+
+[TRATAR_LLAMSIS] simplon: i 33
+
+[TRATAR_LLAMSIS] simplon: i 34
+
+[TRATAR_LLAMSIS] simplon: i 35
+
+[TRATAR_LLAMSIS] simplon: i 36
+
+[TRATAR_LLAMSIS] simplon: i 37
+
+[TRATAR_LLAMSIS] simplon: i 38
+
+[TRATAR_LLAMSIS] simplon: i 39
+
+[TRATAR_LLAMSIS] simplon: i 40
+
+[TRATAR_LLAMSIS] simplon: i 41
+
+[TRATAR_LLAMSIS] simplon: i 42
+
+[TRATAR_LLAMSIS] simplon: i 43
+
+[TRATAR_LLAMSIS] simplon: i 44
+
+[TRATAR_LLAMSIS] simplon: i 45
+
+[TRATAR_LLAMSIS] simplon: i 46
+
+[TRATAR_LLAMSIS] simplon: i 47
+
+[TRATAR_LLAMSIS] simplon: i 48
+
+[TRATAR_LLAMSIS] simplon: i 49
+
+[TRATAR_LLAMSIS] simplon: i 50
+
+[TRATAR_LLAMSIS] simplon: i 51
+
+[TRATAR_LLAMSIS] simplon: i 52
+
+[TRATAR_LLAMSIS] simplon: i 53
+
+[TRATAR_LLAMSIS] simplon: i 54
+
+[TRATAR_LLAMSIS] simplon: i 55
+
+[TRATAR_LLAMSIS] simplon: i 56
+
+[TRATAR_LLAMSIS] simplon: i 57
+
+[TRATAR_LLAMSIS] simplon: i 58
+
+[TRATAR_LLAMSIS] simplon: i 59
+
+[TRATAR_LLAMSIS] simplon: i 60
+
+[TRATAR_LLAMSIS] simplon: i 61
+
+[TRATAR_LLAMSIS] simplon: i 62
+
+[TRATAR_LLAMSIS] simplon: i 63
+
+[TRATAR_LLAMSIS] simplon: i 64
+
+[TRATAR_LLAMSIS] simplon: i 65
+
+[TRATAR_LLAMSIS] simplon: i 66
+
+[TRATAR_LLAMSIS] simplon: i 67
+
+[TRATAR_LLAMSIS] simplon: i 68
+
+[TRATAR_LLAMSIS] simplon: i 69
+
+[TRATAR_LLAMSIS] simplon: i 70
+
+[TRATAR_LLAMSIS] simplon: i 71
+
+[TRATAR_LLAMSIS] simplon: i 72
+
+[TRATAR_LLAMSIS] simplon: i 73
+
+[TRATAR_LLAMSIS] simplon: i 74
+
+[TRATAR_LLAMSIS] simplon: i 75
+
+[TRATAR_LLAMSIS] simplon: i 76
+
+[TRATAR_LLAMSIS] simplon: i 77
+
+[TRATAR_LLAMSIS] simplon: i 78
+
+[TRATAR_LLAMSIS] simplon: i 79
+
+[TRATAR_LLAMSIS] simplon: i 80
+
+[TRATAR_LLAMSIS] simplon: i 81
+
+[TRATAR_LLAMSIS] simplon: i 82
+
+[TRATAR_LLAMSIS] simplon: i 83
+
+[TRATAR_LLAMSIS] simplon: i 84
+
+[TRATAR_LLAMSIS] simplon: i 85
+
+[TRATAR_LLAMSIS] simplon: i 86
+
+[TRATAR_LLAMSIS] simplon: i 87
+
+[TRATAR_LLAMSIS] simplon: i 88
+
+[TRATAR_LLAMSIS] simplon: i 89
+
+[TRATAR_LLAMSIS] simplon: i 90
+
+[TRATAR_LLAMSIS] simplon: i 91
+
+[TRATAR_LLAMSIS] simplon: i 92
+
+[TRATAR_LLAMSIS] simplon: i 93
+
+[TRATAR_LLAMSIS] simplon: i 94
+
+[TRATAR_LLAMSIS] simplon: i 95
+
+[TRATAR_LLAMSIS] simplon: i 96
+
+[TRATAR_LLAMSIS] simplon: i 97
+
+[TRATAR_LLAMSIS] simplon: i 98
+
+[TRATAR_LLAMSIS] simplon: i 99
+
+[TRATAR_LLAMSIS] simplon: i 100
+
+[TRATAR_LLAMSIS] simplon: i 101
+
+[TRATAR_LLAMSIS] simplon: i 102
+
+[TRATAR_LLAMSIS] simplon: i 103
+
+[TRATAR_LLAMSIS] simplon: i 104
+
+[TRATAR_LLAMSIS] simplon: i 105
+
+[TRATAR_LLAMSIS] simplon: i 106
+
+[TRATAR_LLAMSIS] simplon: i 107
+
+[TRATAR_LLAMSIS] simplon: i 108
+
+[TRATAR_LLAMSIS] simplon: i 109
+
+[TRATAR_LLAMSIS] simplon: i 110
+
+[TRATAR_LLAMSIS] simplon: i 111
+
+[TRATAR_LLAMSIS] simplon: i 112
+
+[TRATAR_LLAMSIS] simplon: i 113
+
+[TRATAR_LLAMSIS] simplon: i 114
+
+[TRATAR_LLAMSIS] simplon: i 115
+
+[TRATAR_LLAMSIS] simplon: i 116
+
+[TRATAR_LLAMSIS] simplon: i 117
+
+[TRATAR_LLAMSIS] simplon: i 118
+
+[TRATAR_LLAMSIS] simplon: i 119
+
+[TRATAR_LLAMSIS] simplon: i 120
+
+[TRATAR_LLAMSIS] simplon: i 121
+
+[TRATAR_LLAMSIS] simplon: i 122
+
+[TRATAR_LLAMSIS] simplon: i 123
+
+[TRATAR_LLAMSIS] simplon: i 124
+
+[TRATAR_LLAMSIS] simplon: i 125
+
+[TRATAR_LLAMSIS] simplon: i 126
+
+[TRATAR_LLAMSIS] simplon: i 127
+
+[TRATAR_LLAMSIS] simplon: i 128
+
+[TRATAR_LLAMSIS] simplon: i 129
+
+[TRATAR_LLAMSIS] simplon: i 130
+
+[TRATAR_LLAMSIS] simplon: i 131
+
+[TRATAR_LLAMSIS] simplon: i 132
+
+[TRATAR_LLAMSIS] simplon: i 133
+
+[TRATAR_LLAMSIS] simplon: i 134
+
+[TRATAR_LLAMSIS] simplon: i 135
+
+[TRATAR_LLAMSIS] simplon: i 136
+
+[TRATAR_LLAMSIS] simplon: i 137
+
+[TRATAR_LLAMSIS] simplon: i 138
+
+[TRATAR_LLAMSIS] simplon: i 139
+
+[TRATAR_LLAMSIS] simplon: i 140
+
+[TRATAR_LLAMSIS] simplon: i 141
+
+[TRATAR_LLAMSIS] simplon: i 142
+
+[TRATAR_LLAMSIS] simplon: i 143
+
+[TRATAR_LLAMSIS] simplon: i 144
+
+[TRATAR_LLAMSIS] simplon: i 145
+
+[TRATAR_LLAMSIS] simplon: i 146
+
+[TRATAR_LLAMSIS] simplon: i 147
+
+[TRATAR_LLAMSIS] simplon: i 148
+
+[TRATAR_LLAMSIS] simplon: i 149
+
+[TRATAR_LLAMSIS] simplon: i 150
+
+[TRATAR_LLAMSIS] simplon: i 151
+
+[TRATAR_LLAMSIS] simplon: i 152
+
+[TRATAR_LLAMSIS] simplon: i 153
+
+[TRATAR_LLAMSIS] simplon: i 154
+
+[TRATAR_LLAMSIS] simplon: i 155
+
+[TRATAR_LLAMSIS] simplon: i 156
+
+[TRATAR_LLAMSIS] simplon: i 157
+
+[TRATAR_LLAMSIS] simplon: i 158
+
+[TRATAR_LLAMSIS] simplon: i 159
+
+[TRATAR_LLAMSIS] simplon: i 160
+
+[TRATAR_LLAMSIS] simplon: i 161
+
+[TRATAR_LLAMSIS] simplon: i 162
+
+[TRATAR_LLAMSIS] simplon: i 163
+
+[TRATAR_LLAMSIS] simplon: i 164
+
+[TRATAR_LLAMSIS] simplon: i 165
+
+[TRATAR_LLAMSIS] simplon: i 166
+
+[TRATAR_LLAMSIS] simplon: i 167
+
+[TRATAR_LLAMSIS] simplon: i 168
+
+[TRATAR_LLAMSIS] simplon: i 169
+
+[TRATAR_LLAMSIS] simplon: i 170
+
+[TRATAR_LLAMSIS] simplon: i 171
+
+[TRATAR_LLAMSIS] simplon: i 172
+
+[TRATAR_LLAMSIS] simplon: i 173
+
+[TRATAR_LLAMSIS] simplon: i 174
+
+[TRATAR_LLAMSIS] simplon: i 175
+
+[TRATAR_LLAMSIS] simplon: i 176
+
+[TRATAR_LLAMSIS] simplon: i 177
+
+[TRATAR_LLAMSIS] simplon: i 178
+
+[TRATAR_LLAMSIS] simplon: i 179
+
+[TRATAR_LLAMSIS] simplon: i 180
+
+[TRATAR_LLAMSIS] simplon: i 181
+
+[TRATAR_LLAMSIS] simplon: i 182
+
+[TRATAR_LLAMSIS] simplon: i 183
+
+[TRATAR_LLAMSIS] simplon: i 184
+
+[TRATAR_LLAMSIS] simplon: i 185
+
+[TRATAR_LLAMSIS] simplon: i 186
+
+[TRATAR_LLAMSIS] simplon: i 187
+
+[TRATAR_LLAMSIS] simplon: i 188
+
+[TRATAR_LLAMSIS] simplon: i 189
+
+[TRATAR_LLAMSIS] simplon: i 190
+
+[TRATAR_LLAMSIS] simplon: i 191
+
+[TRATAR_LLAMSIS] simplon: i 192
+
+[TRATAR_LLAMSIS] simplon: i 193
+
+[TRATAR_LLAMSIS] simplon: i 194
+
+[TRATAR_LLAMSIS] simplon: i 195
+
+[TRATAR_LLAMSIS] simplon: i 196
+
+[TRATAR_LLAMSIS] simplon: i 197
+
+[TRATAR_LLAMSIS] simplon: i 198
+
+[TRATAR_LLAMSIS] simplon: i 199
+
+[TRATAR_LLAMSIS] simplon: termina
+
+[TRATAR_LLAMSIS] 
+[SIS_TERMINAR_PROCESO]
+	Fin del proceso 0
+
+[LIBERAR_PROCESO]
